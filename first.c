@@ -1631,7 +1631,7 @@ int main(){
 
 
 
-#include<stdio.h>
+/*#include<stdio.h>
 int main(){
     int n=5;
     for(int i=1;i<=n;i++){
@@ -1640,5 +1640,141 @@ int main(){
         }
         printf("\n");
     }
+    return 0;
+}*/
+
+
+
+/*#include<stdio.h>
+int main(){
+    int n=5;
+    int m=6;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=m;j++){
+            if(i==1 || j==1 || i==n ||j==m){
+                printf("* ");
+            }
+            else{
+                printf("  ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}*/
+
+
+/*#include <stdio.h>
+
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int a = 5;
+    int b = 10;
+    int result = add(a, b);
+    printf("The sum of %d and %d is %d\n", a, b, result);
+    return 0;
+}*/
+
+
+
+/*#include<stdio.h>
+
+void hello();
+ 
+int main() {
+    hello();
+    return 0;
+}
+
+void hello(){
+    printf("hello");
+}*/
+
+
+
+/*#include<stdio.h>
+void hey(){
+    printf("hey\n");
+    printf("salil\n");
+}
+int main(){
+    hey();
+    hey();
+}*/
+
+
+
+/*#include<stdio.h>
+void hello(){
+    printf("hello");
+}
+void bonjur(){
+    printf("\nbonjur");
+}
+int main(){
+    hello();
+    bonjur();
+}*/
+
+
+
+/*#include<stdio.h>
+void hello(){
+    printf("hello");
+}
+void bonjur(){
+    printf("bonjur");
+}
+int main(){
+    char c,i,f;
+    printf("enter i for indian and f for french: ");
+    scanf("%c", &c);
+    if(c=='f'){
+        bonjur();
+    }
+    else if(c=='i'){
+        hello();
+    }
+    else{
+        printf("please enter valid input");
+    }
+    return 0;
+}*/
+
+
+
+/*#include<stdio.h>
+int sum(int a,int b);
+int main(){
+    int a,b,s;
+    scanf("%d", &a);
+    scanf("%d", &b);
+
+    s=sum(a,b);
+    s=sum(a,b);
+    printf("sum= %d", s);
+    return 0;
+}
+int sum(int x, int y){
+    return x+y;
+    return x+y;
+}*/
+
+
+
+#include<stdio.h>
+void table(int n){
+    for(int i=1;i<11;i++){
+        printf("%d\n", i*n);
+    }
+}
+int main(){
+    int n;
+    printf("enter the value of n: ");
+    scanf("%d", &n);
+    table(n);
     return 0;
 }
