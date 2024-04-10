@@ -1765,7 +1765,7 @@ int sum(int x, int y){
 
 
 
-#include<stdio.h>
+/*#include<stdio.h>
 void table(int n){
     for(int i=1;i<11;i++){
         printf("%d\n", i*n);
@@ -1777,5 +1777,57 @@ int main(){
     scanf("%d", &n);
     table(n);
     return 0;
+}*/
+
+
+
+/*#include<stdio.h>
+void cal_gst(float value){
+    value=value+(0.18*value);
+    printf("amount is %f", value);
 }
-// Hola
+int main(){
+    float value = 100;
+    cal_gst(value);
+    return 0;
+}*/
+
+
+
+/*#include<stdio.h>
+void cal_gst(float value){
+    value=value+(value*0.25);
+    printf("%f", value);
+}
+int main(){
+    float value;
+    printf("enter the value: ");
+    scanf("%f", &value);
+    cal_gst(value);
+    return 0;
+}*/
+
+
+
+/*#include<stdio.h>
+#include<math.h>
+int main(){
+    float n=4;
+    printf("%f", pow(n,3));
+    return 0;
+}*/
+
+
+
+#include<stdio.h>
+void circle(){
+    float r,area;
+    printf("enter the value of circle's radius: ");
+    scanf("%f", &r);
+    area=2*3.14*r;
+    printf("area of circle is %f", area);
+}
+int main(){
+    circle();
+    return 0;
+}
