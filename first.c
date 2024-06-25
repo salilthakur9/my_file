@@ -1633,12 +1633,101 @@ int main(){
 
 /*#include<stdio.h>
 int main(){
-    int n=5;
-    for(int i=1;i<=n;i++){
-        for(int j=1;j<=i;j++){
-            printf("%d ",j);
+    int a,b,sum;
+    printf("lets find the sum of 2 numbers:");
+    printf("\nenter the value of a= ");
+    scanf("%d", &a);
+    printf("enterthe value of b= ");
+    scanf("%d", &b);
+    sum=a+b;
+    printf("")
+}*/
+
+
+
+/*#include<stdio.h>
+int main(){
+    int age=20;
+    int *ptr = &age;
+    int _age = *ptr;
+    printf("%d", _age);
+    return 0;
+}*/
+
+
+
+/*#include<stdio.h>
+int main(){
+    int age=19;
+    int *ptr = &age;
+
+    printf("%d\n", age);
+    printf("%d\n", *ptr);
+    printf("%d", *(&age));
+    return 0;
+}*/
+
+
+
+/*#include<stdio.h>
+int main(){
+    int i=10;
+    int *ptr=&i;
+    int **pptr=&ptr;
+    printf("%d", **pptr);
+    return 0;
+}*/
+
+
+
+/*#include<stdio.h>
+int main(){
+    int arr[5]={1,2,3,4,5};
+    for (int i=0;i<5;i++){
+        printf("%d ", arr[i]);
+    }
+    return 0;
+}*/
+
+
+
+/*#include<stdio.h>
+int main(){
+    int arr[5];
+    for(int i=0;i<5;i++){
+        printf("enter the array %d :",i+1);
+        scanf("%d", &arr[i]);
+    }
+    for(int i=0;i<5;i++){
+    printf("%d", arr[i]);
+    }
+    return 0;
+}*/
+
+
+
+/*#include<stdio.h>
+int main(){
+    int arr[5];
+    for (int i=0;i<5;i++){
+        printf("enter the array %d :", i+1);
+        scanf("%d ", &arr[i]);
+    }
+    for (int i=4;i>=0;i--){
+        printf("%d ", arr[i]);
+    }
+    return 0;
+}*/
+
+
+
+/*#include<stdio.h>
+int main(){
+    int marks[5]={10,20,20,10,15};
+    for(int i=0;i<=4;i++){
+        if(marks[i]<=10){
+            printf("%d ", marks[i]);
         }
-        printf("\n");
     }
     return 0;
 }*/
@@ -1647,187 +1736,308 @@ int main(){
 
 /*#include<stdio.h>
 int main(){
-    int n=5;
-    int m=6;
-    for(int i=1;i<=n;i++){
-        for(int j=1;j<=m;j++){
-            if(i==1 || j==1 || i==n ||j==m){
-                printf("* ");
-            }
-            else{
-                printf("  ");
+    int arr[5]={1,2,3,4,5};
+    printf("%p\n",&arr[0]);
+    printf("%p\n",&arr[1]);
+    printf("%p\n",&arr[2]);
+    printf("%p\n",&arr[3]);
+    printf("%p\n",&arr[4]);
+    return 0;
+}*/
+
+
+
+/*#include<stdio.h>
+int main(){
+    int arr[5]={1,2,3,4,5},mul=1;
+    for(int i=0;i<5;i++){
+        mul=mul*arr[i];
+
+    }
+    printf("%d", mul);
+    return 0;
+}*/
+
+
+
+/*#include<stdio.h>
+int main(){
+    int arr[5]={-1,-2,-4,-3,-1};
+    int max=arr[0];
+    for(int i=0;i<5;i++){
+        if(arr[i]<max){
+            max=arr[i];
+        }
+    }
+    printf("%d", max);
+    return 0;
+}*/
+
+
+
+/*#include<stdio.h>
+int main(){
+    int arr[5]={1,2,3,4,5};
+    for(int i=0;i<5;i++){
+        if(i%2==0){
+            arr[i]+=10;
+        }else{
+            arr[i]*=2;
+        }
+        printf("%d ", arr[i]);
+    } 
+    return 0;
+}*/
+
+
+
+/*#include<stdio.h>
+int main(){
+    int arr[6]={1,2,3,2,1,3};
+    int x=4;
+    int total_pairs=0;
+    for(int i=0;i<6;i++){
+        for(int j=i+1;j<6;j++){
+            if(arr[i]+arr[j]==x){
+                total_pairs++;
+                printf("(%d,%d)", arr[i],arr[j]);
+                
             }
         }
-        printf("\n");
+    }
+    printf("\n%d", total_pairs);
+    return 0;
+}*/
+
+
+
+/*#include<stdio.h>
+int main(){
+    int class_held,class_attend,attendence;
+    char medical;
+    scanf("%d", &class_attend);
+    scanf("%d", &class_held);
+
+    attendence=(class_attend/class_held)*100;
+
+    if(attendence>75){
+        printf("Allowed");
+    }else{
+        scanf("%c", &medical);
+        if(medical=='y','Y'){
+            printf("Allowed");
+        }
+        else if(medical=='n','N'){
+            printf("Not allowed");
+        }else{
+            printf("Not allowed");
+        }
     }
     return 0;
 }*/
 
 
-/*#include <stdio.h>
-
-int add(int a, int b) {
-    return a + b;
-}
-
-int main() {
-    int a = 5;
-    int b = 10;
-    int result = add(a, b);
-    printf("The sum of %d and %d is %d\n", a, b, result);
-    return 0;
-}*/
-
-
 
 /*#include<stdio.h>
-
-void hello();
- 
-int main() {
-    hello();
-    return 0;
-}
-
-void hello(){
-    printf("hello");
-}*/
-
-
-
-/*#include<stdio.h>
-void hey(){
-    printf("hey\n");
-    printf("salil\n");
-}
 int main(){
-    hey();
-    hey();
-}*/
-
-
-
-/*#include<stdio.h>
-void hello(){
-    printf("hello");
-}
-void bonjur(){
-    printf("\nbonjur");
-}
-int main(){
-    hello();
-    bonjur();
-}*/
-
-
-
-/*#include<stdio.h>
-void hello(){
-    printf("hello");
-}
-void bonjur(){
-    printf("bonjur");
-}
-int main(){
-    char c,i,f;
-    printf("enter i for indian and f for french: ");
-    scanf("%c", &c);
-    if(c=='f'){
-        bonjur();
+    float a,b,c,d,e,avg;
+    scanf("%f\n%f\n%f\n%f\n%f\n", &a,&b,&c,&d,&e);
+    avg=(a+b+c+d+e)/5;
+    if(avg>=60){
+        printf("A");
     }
-    else if(c=='i'){
-        hello();
+    else if(avg<=59 && avg >=50){
+        printf("B");
+    }
+    else if(avg<=49 && avg >= 40){
+        printf("C");
     }
     else{
-        printf("please enter valid input");
+        printf("Fail");
     }
     return 0;
+
 }*/
 
 
 
 /*#include<stdio.h>
-int sum(int a,int b);
 int main(){
-    int a,b,s;
-    scanf("%d", &a);
-    scanf("%d", &b);
+    int position,salary,pay_out;
+    scanf("%d", &position);
+    scanf("%d", &salary);
 
-    s=sum(a,b);
-    s=sum(a,b);
-    printf("sum= %d", s);
+    if(position==0){
+        pay_out=salary+(salary*0.25)+(salary*0.2);
+    }
+    else if(position==1){
+        pay_out=salary+(salary*0.3)+(salary*0.25)+(salary*0.1);
+    }
+    printf("%d", pay_out);
     return 0;
-}
-int sum(int x, int y){
-    return x+y;
-    return x+y;
 }*/
 
 
 
 /*#include<stdio.h>
-void table(int n){
-    for(int i=1;i<11;i++){
-        printf("%d\n", i*n);
-    }
-}
 int main(){
     int n;
-    printf("enter the value of n: ");
     scanf("%d", &n);
-    table(n);
+    if(n>0 && n<=30){
+        printf("Group A");
+    }
+    else if(n>=31 &&n<=65){
+        printf("Group B");
+    }
+    else if(n>=66 && n<=100){
+        printf("Group C");
+    }
+    else{
+        printf("Invalid input");
+    }
     return 0;
 }*/
 
 
 
 /*#include<stdio.h>
-void cal_gst(float value){
-    value=value+(0.18*value);
-    printf("amount is %f", value);
-}
 int main(){
-    float value = 100;
-    cal_gst(value);
+    int a,b,c;
+    scanf("%d\n%d\n%d", &a,&b,&c);
+    if(a>b && a>c){
+        printf("%d", a);
+    }
+    else if(b>a && b>c){
+        printf("%d", b);
+    }
+    else{
+        printf("%d", c);
+    }
     return 0;
 }*/
 
 
 
 /*#include<stdio.h>
-void cal_gst(float value){
-    value=value+(value*0.25);
-    printf("%f", value);
-}
 int main(){
-    float value;
-    printf("enter the value: ");
-    scanf("%f", &value);
-    cal_gst(value);
+    int n;
+    scanf("%d", &n);
+    switch(n){
+        case 1:
+        printf("31");
+        break;
+        case 2:
+        printf("28 or 29");
+        break;
+        case 3:
+        printf("31");
+        break;
+        case 4:
+        printf("30");
+        break;
+        case 5:
+        printf("31");
+        break;
+        case 6:
+        printf("30");
+        break;
+        case 7:
+        printf("31");
+        break;
+        case 8:
+        printf("31");
+        break;
+        case 9:
+        printf("30");
+        break;
+        case 10:
+        printf("31");
+        break;
+        case 11:
+        printf("30");
+        break;
+        case 12:
+        printf("31");
+        break;
+        }
     return 0;
 }*/
 
 
 
 /*#include<stdio.h>
-#include<math.h>
 int main(){
-    float n=4;
-    printf("%f", pow(n,3));
+    char ch;
+    scanf("%c", &ch);
+    if('A'<=ch<='Z' && 'a'<=ch<='z'){
+        printf("Character is an alphabet");
+    }
+    else{
+        printf("Character is not an alphabet");
+    }
     return 0;
 }*/
 
 
 
-#include<stdio.h>
-void circle(){
-    float r,area;
-    printf("enter the value of circle's radius: ");
-    scanf("%f", &r);
-    area=2*3.14*r;
-    printf("area of circle is %f", area);
-}
+/*#include<stdio.h>
 int main(){
-    circle();
+    int num1,num2;
+    scanf("%d", &num1);
+    scanf("%d", &num2);
+    if(num1>num2){
+        printf("%d", num1-num2);
+    }
+    else{
+        printf("%d", num1+num2);
+    }
     return 0;
-}
+
+}*/
+
+
+
+/*#include<stdio.h>
+#include<ctype.h>
+int main(){
+    char str[1000];
+    int alpha=0,num=0,charac=0;
+    fgets(str, sizeof(str), stdin);
+    for(int i=0;str[i]!='\0';i++){
+        if(isalpha(str[i])){
+            alpha++;
+        }else if(isdigit(str[i])){
+            num++;
+        }else if(ispunct(str[i])){
+            charac++;
+        }
+    }
+    printf("%d\n%d\n%d", alpha,num,charac);
+    return 0;
+
+}*/
+
+
+
+/*#include<stdio.h>
+#include<ctype.h>
+int main(){
+    char str[1000];
+    int alphabets=0,numbers=0,characters=0;
+
+    fgets(str, sizeof(str), stdin);
+    
+    for(int i=0;str[i]!='\0'; i++){
+        if(isalpha(str[i])){
+            alphabets++;
+        }else if(isdigit(str[i])){
+            numbers++;
+        }else if(ispunct(str[i])){
+            characters++;
+        }
+    }
+    printf("%d\n%d\n%d", alphabets,numbers,characters);
+    return 0;
+}*/
+
+
