@@ -1960,7 +1960,7 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int main(){
     char x;
@@ -1975,4 +1975,63 @@ int main(){
         cout<<"false input";
     }
     return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+int main(){
+    int num;
+    cin>>num;
+    if(num>=30 && num<=50){
+        cout<<"Average";
+    }else if(num>=51 && num<=60){
+        cout<<"Good";
+    }else if(num>=61 && num<=70){
+        cout<<"Excellent";
+    }else if(num>=71 && num<=100){
+        cout<<"Perfect";
+    }else{
+        cout<<"Fail";
+    }
+    return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+int main(){
+    int num,a,x,sum=0;
+    cin>>num;
+    cin>>x;
+    while(num!=0){
+        a=num%10;
+        num=num/10;
+        if(a!=x){
+            sum++;
+        }
+    }cout<<sum;
+    return 0;
+}*/
+
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int num,x,sum=0;
+    cin>>num;
+    while(num!=0){
+        x=num%10;
+        num=num/10;
+        if(x!=2 && x!=3 && x!=5 && x!=7){
+            sum=sum+x;}
+        }
+    cout<<sum;
+return 0;
 }
+
+
+
