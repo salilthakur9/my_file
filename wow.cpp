@@ -1934,7 +1934,7 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int main(){
     int x=5;
@@ -1944,5 +1944,35 @@ int main(){
     cout<<x<<endl;
     cout<<*p<<endl;
     cout<<p<<endl;
+    return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+int main(){
+    int x;
+    cin>>x;
+    (x%2==0)?cout<<"even"<<endl : cout<<"odd"<<endl;
+    return 0;
+}*/
+
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    char x;
+    cin>>x;
+    if(x>='a' && x<='z' || x>='A' && x<='Z'){
+        if(x=='a'||x=='e'||x=='i'||x=='o'||x=='u'){
+            cout<<"even"<<endl;
+        }else{
+            cout<<"consunent";
+        }
+    }else{
+        cout<<"false input";
+    }
     return 0;
 }
