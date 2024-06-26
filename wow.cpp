@@ -2211,3 +2211,16 @@ int main(){
 
 
 
+/*#include<iostream>
+using namespace std;
+int main(){
+    int x,fact;
+    cin>>x;
+    fact=x;
+    while(x!=1){
+        x--;
+        fact=fact*x;
+    }
+    cout<<fact;
+    return 0;
+}*/
