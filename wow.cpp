@@ -2018,7 +2018,7 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int main(){
     int num,x,sum=0;
@@ -2031,7 +2031,20 @@ int main(){
         }
     cout<<sum;
 return 0;
+}*/
+
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int x,y;
+    cin>>x>>y;
+
+    x=x+y;
+    y=x-y;
+    x=x-y;
+    
+    cout<<x<<endl<<y<<endl;
+    return 0;
 }
-
-
-
