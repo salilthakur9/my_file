@@ -2035,7 +2035,7 @@ return 0;
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int main(){
     int x,y;
@@ -2047,4 +2047,167 @@ int main(){
     
     cout<<x<<endl<<y<<endl;
     return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+int main(){
+    int x;
+    cin>>x;
+    int fact=x;
+    while(x>1){
+        x--;
+        fact=fact*x;
+    }
+    cout<<fact;
+    return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+int main(){
+    int x,num,rev=0,digit;
+    cin>>x;
+    num=x;
+    while(num!=0){
+        digit=num%10;
+        rev=(rev*10)+digit;
+        num=num/10;
+    }
+    if(x==rev){
+        cout<<"palindrrone";
+    }else{
+        cout<<"not palendrone";
+    }
+    return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+int main(){
+    int x,num,digit,rev=0;
+    cin>>x;
+    num=x;
+    while(num!=0){
+        digit=num%10;
+        rev=(rev*10)+digit;
+        num=num/10;
+    }
+    if(x==rev){
+        cout<<"palendrome";
+    }else{
+        cout<<"not palendrome";
+    }
+    return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+int main(){
+    int num,first=0,second=1,next;
+    cin>>num;
+    for(int i=0;i<num;i++){
+        cout<<first<<" ";
+        next=first+second;
+        first=second;
+        second=next;
+    }
+    return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+int main(){
+    int num,first=0,second=1,next;
+    cout<<"enter the numbers of bibonachi you want to print in the output: "<<endl;
+    cin>>num;
+    for(int i=0;i<num;i++){
+        cout<<first<<" ";
+        next=first +second;
+        first=second;
+        second=next;
+    }
+    return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+int main(){
+    int arr[5],i;
+    for(i=0;i<5;i++){
+        cin>>arr[i];
+    }
+    for(i=0;i<5;i++){
+    cout<<arr[i]<<" ";
+    }
+    return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+int add[3],sub[3],mul[3],division[3],A[3],B[3];
+void func1(){
+    for(int i=0;i<3;i++){
+        add[i]=A[i]+B[i];
+        cout<<add[i]<<" ";
+    }
+    cout<<endl;
 }
+void func2(){
+    for(int i=0;i<3;i++){
+        sub[i]=A[i]-B[i];
+        cout<<sub[i]<<" ";
+    }
+    cout<<endl;
+}
+void func3(){
+    for(int i=0;i<3;i++){
+        mul[i]=A[i]*B[i];
+        cout<<mul[i]<<" ";
+    }
+    cout<<endl;
+}
+void func4(){
+    for(int i=0;i<3;i++){
+        division[i]=A[i]/B[i];
+        cout<<division[i]<<" ";
+    }
+    cout<<endl;
+}
+int main(){
+    cout<<"enter 3 integers for array A: "<<endl;
+    for(int i=0;i<3;i++){
+        cin>>A[i];
+    }
+    cout<<"enter 3 integers for array B: "<<endl;
+    for(int i=0;i<3;i++){
+        cin>>B[i];
+    }
+    cout<<"addition of both array: ";
+    func1();
+    cout<<"subtration of both arrays: ";
+    func2();
+    cout<<"multiplication of both arrays: ";
+    func3();
+    cout<<"division of both arrays: ";
+    func4();
+
+    return 0;
+}*/
+
+
+
