@@ -2224,3 +2224,73 @@ int main(){
     cout<<fact;
     return 0;
 }*/
+
+
+
+/*#include<iostream>
+using namespace std;
+struct person{
+    string name;
+    int age;
+    float height;
+};
+void enter_person(const person &p){
+    cout<<"name: "<<p.name<<endl;
+    cout<<"age: "<<p.age<<endl;
+    cout<<"height in meters: "<<p.height<<endl;
+}
+int main(){
+    person person1,person2;
+    cout<<"enter name: "<<endl;
+    cin>>person1.name;
+
+    cout<<"enter age: "<<endl;
+    cin>>person1.age;
+
+    cout<<"enter height: "<<endl;
+    cin>>person1.height;
+
+    cout<<"enter name: "<<endl;
+    cin>>person2.name;
+
+    cout<<"enter age: "<<endl;
+    cin>>person2.age;
+
+    cout<<"enter height: "<<endl;
+    cin>>person2.height;
+
+    enter_person(person1);
+    enter_person(person2);
+    return 0;
+}*/
+
+
+
+/*#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    vector<int> v1;
+    v1.push_back(6);
+    cout<<v1.capacity()<<endl;
+    v1.push_back(6);
+    cout<<v1.capacity()<<endl;
+    v1.push_back(6);
+    cout<<v1.capacity()<<endl;
+    v1.push_back(6);
+    cout<<v1.capacity()<<endl;
+    v1.push_back(6);
+    cout<<v1.capacity()<<endl;
+    v1.push_back(6);
+    cout<<v1.capacity()<<endl;
+    v1.push_back(6);
+    cout<<v1.capacity()<<endl;
+    v1.push_back(6);
+    cout<<v1.capacity()<<endl;
+    v1.push_back(6);
+    cout<<v1.capacity()<<endl;
+    return 0;
+}*/
+
+
+
