@@ -2402,3 +2402,51 @@ int main(){
     }
     return 0;
 }*/
+
+
+
+/*#include<iostream>
+using namespace std;
+class binary{
+    public:
+    string s;
+    void read(void);
+    void check_binary(void);
+    void ones_compliment(void);
+    void display(void);
+};
+void binary :: read(){
+        cout<<"enter the binary number: "<<endl;
+        cin>>s;
+}
+    void binary :: check_binary(void){
+        for(int i=0;i<s.length();i++){
+            if(s.at(i)!='1' && s.at(i)!='0'){
+                cout<<"false input, it is not a binary number!"<<endl;
+                exit(0);
+            }
+            }
+        }
+    void binary :: ones_compliment(void){
+        for(int i=0;i<s.length();i++){
+            if(s.at(i)=='1'){
+                s.at(i)='0';
+            }else if(s.at(i)=='0'){
+                s.at(i)='1';
+            }
+        }
+    }
+    void binary :: display(void){
+        for(int i=0;i<s.length();i++){
+            cout<<s.at(i);
+        }
+    }
+int main(){
+    binary obj;
+    obj.read();
+    obj.check_binary();
+    cout<<"number in ones compliment is : ";
+    obj.ones_compliment();
+    obj.display();
+    return 0;
+}*/
