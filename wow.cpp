@@ -2450,3 +2450,29 @@ int main(){
     obj.display();
     return 0;
 }*/
+
+
+
+#include<iostream>
+using namespace std;
+
+class binary{
+    public:
+    string s;
+    void read();
+    void check_binary(void);
+    void ones_compliment(void);
+    void display(void);
+};
+void binary::read(){
+    cout<<"enter the binary you want to input: "<<endl;
+    cin>>s;
+}
+void binary::check_binary(void){
+    for(int i=0;i<s.length();i++){
+        
+    }
+}
+int main(){
+return 0;
+}
