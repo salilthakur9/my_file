@@ -2612,3 +2612,118 @@ int main(){
 
     return 0;
 }*/
+
+
+
+/*#include <iostream>
+
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        if (x < 0)
+            return false;
+
+        long reversed = 0;
+        int y = x;
+
+        while (y > 0) {
+            reversed = reversed * 10 + y % 10;
+            y /= 10;
+        }
+
+        return reversed == x;
+    }
+};
+
+int main() {
+    Solution solution;
+    int testCases[] = {121, -121, 10, 12321, 0, 1, 123321};
+
+    for (int testCase : testCases) {
+        std::cout << "Is " << testCase << " a palindrome? "
+                  << (solution.isPalindrome(testCase) ? "Yes" : "No") << std::endl;
+    }
+
+    return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+
+class complex{
+    int a,b;
+    friend complex sumcomplex(complex o1, complex o2);
+    public:
+    void setnumber(int n1, int n2){
+        a=n1;
+        b=n2;
+    }
+    void printnumber()
+    {
+        cout<<"your numer is "<<a<<" + "<<b<<"i"<<endl;
+    }
+};
+
+complex sumcomplex(complex o1, complex o2){
+    complex o3;
+    o3.setnumber((o1.a + o2.a), (o1.b+o2.b));
+    return o3;
+}
+
+int main(){
+    complex c1,c2,sum;
+    c1.setnumber(1, 4);
+    c2.setnumber(5, 8);
+
+    c1.printnumber();
+    c2.printnumber();
+
+    sum=sumcomplex(c1, c2);
+    sum.printnumber();
+
+    return 0;
+}*/
+
+
+
+#include<iostream>
+using namespace std;
+class complex;
+class calculator{
+    public:
+    int add(int a, int b){
+        return a+b;
+    }
+    int sumrealcomplex(complex, complex);
+};
+class complex{
+    int a, b;
+    friend class calculator;
+    // friend int calculator:: sumrealcomplex(complex,complex);
+    public:
+    void setnumbers(int n1, int n2){
+        a = n1;
+        b = n2;
+    }
+    void printnumbers(){
+        cout<<"your number is "<<a<<" + "<<b<<endl;
+    }
+};
+
+int calculator :: sumrealcomplex(complex o1, complex o2){
+    return (o1.a + o2.a);
+}
+int main(){
+    complex o1, o2;
+
+    o1.setnumbers(1, 4);
+    o2.setnumbers(5, 7);
+
+    calculator calc;
+
+    int res = calc.sumrealcomplex(o1, o2);
+    cout<<"the sum of the real part of o1 and o2 is: "<<res<<endl;
+    return 0;
+}
