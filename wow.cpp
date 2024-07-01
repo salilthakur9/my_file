@@ -2453,7 +2453,7 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 
 class binary{
@@ -2470,9 +2470,84 @@ void binary::read(){
 }
 void binary::check_binary(void){
     for(int i=0;i<s.length();i++){
-        
+        if(s.at(i)!='1' && s.at(i)!='0'){
+            cout<<"false input the entered code is not an binary number!";
+            exit(0);
+        }
+        }
+}
+void binary::ones_compliment(void){
+    for(int i=0;i<s.length();i++){
+        if(s.at(i)=='1'){
+            s.at(i)='0';
+        }else if(s.at(i)=='0'){
+            s.at(i)='1';
+        }
+    }
+}
+void binary::display(void){
+    for(int i=0;i<s.length();i++){
+        cout<<s.at(i);
     }
 }
 int main(){
+    binary obj;
+    obj.read();
+    obj.check_binary();
+    cout<<"ones compliment for your entered binary number is: "<<endl;
+    obj.ones_compliment();
+    obj.display();
 return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+class shop{
+    int itemID[100];
+    int itemPrice[100];
+    int counter;
+    public:
+    void intial_counter(void) { 
+        counter=0;
+    }
+    void setprice(void);
+    void displayprice(void);
+};
+void shop :: setprice(void){
+    cout<<"enter id of your item number: "<<counter+1<<endl;
+    cin>>itemID[counter];
+    cout<<"enter the price of your item: "<<endl;
+    cin>>itemPrice[counter];
+    counter++;
 }
+void shop :: displayprice(void){
+    for(int i=0;i<counter;i++){
+        cout<<"the price of item with ID "<<itemID[i]<<" is "<<itemPrice[i]<<endl;
+    }
+}
+int main(){
+    shop obj;
+    obj.intial_counter();
+    obj.setprice();
+    obj.setprice();
+    obj.setprice();
+    obj.displayprice();
+    return 0;
+}*/
+
+
+
+// #include<iostream>
+// using namespace std;
+// class shop{
+//     int setprice[100];
+//     int setID[100];
+//     int counter;
+//     public:
+//     void initial_counter(void){
+//         counter=0;
+//     }
+//     void 
+// };
