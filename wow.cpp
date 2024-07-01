@@ -2539,15 +2539,40 @@ int main(){
 
 
 
-// #include<iostream>
-// using namespace std;
-// class shop{
-//     int setprice[100];
-//     int setID[100];
-//     int counter;
-//     public:
-//     void initial_counter(void){
-//         counter=0;
-//     }
-//     void 
-// };
+#include<iostream>
+using namespace std;
+class shop{
+    int itemprice[100];
+    int itemID[100];
+    int counter;
+    public:
+    void initial_counter(void){
+        counter=0;
+    }
+    void setprice(void);
+    void displayprice(void);
+};
+void shop::setprice(void){
+    cout<<"enter the ID of your item "<<counter+1<<": "<<endl;
+    cin>>itemID[counter];
+    cout<<"enter the price of your item: "<<endl;
+    cin>>itemprice[counter];
+    counter++;
+}
+void shop ::displayprice(void){
+    for(int i=0;i<counter;i++){
+        cout<<"the price of item with ID "<<itemID[i]<<" is "<<itemprice[i]<<endl;
+    }
+}
+int main(){
+    shop object;
+    object.initial_counter();
+    int n;
+    cout<<"enter the number of items that you have bought: ";
+    cin>>n;
+    for(int i=0;i<n;i++){
+        object.setprice();
+    }
+    object.displayprice();
+    return 0;
+}
