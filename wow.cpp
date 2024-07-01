@@ -2539,7 +2539,7 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 class shop{
     int itemprice[100];
@@ -2575,4 +2575,40 @@ int main(){
     }
     object.displayprice();
     return 0;
-}
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+class employee{
+    int id;
+    static int count;
+    public:
+    void setdata(void){
+        cout<<"enter the ID: "<<endl;
+        cin>>id;
+        count++;
+    }
+    void getdata(void){
+        cout<<"the id of this employee is "<<id<<" and this is employye number "<< count<<endl;
+    }
+    void getcount(void){
+        cout<<"the value of count is "<<count<<endl;
+    }
+};
+
+int employee::count;
+int main(){
+    employee salil, aryan;
+    employee obj;
+    salil.setdata();
+    salil.getdata();
+    obj.getcount();
+    
+    aryan.setdata();
+    aryan.getdata();
+    obj.getcount();
+
+    return 0;
+}*/
