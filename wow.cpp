@@ -2764,3 +2764,41 @@ int main(){
     add(a1, b1);
     return 0;
 }*/
+
+
+
+#include<iostream>
+using namespace std;
+class B;
+class A{
+    private:
+    int data;
+    public:
+    int setvalue(int value){
+        data=value;
+    }
+    friend void sumofclasses(A,B);
+};
+class B{
+    private:
+    int num;
+    public:
+    int setvalue(int value){
+        num=value;
+    }
+    friend void sumofclasses(A,B);
+};
+
+void sumofclasses(A object1, B object2){
+    cout<<"sum: "<<object1.data+object2.num;
+}
+
+int main(){
+    A a;
+    B b;
+    a.setvalue(20);
+    b.setvalue(10);
+
+    sumofclasses(a,b);
+    return 0;
+}
