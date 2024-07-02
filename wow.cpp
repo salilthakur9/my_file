@@ -2767,7 +2767,7 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 class B;
 class A{
@@ -2801,4 +2801,4 @@ int main(){
 
     sumofclasses(a,b);
     return 0;
-}
+}*/
