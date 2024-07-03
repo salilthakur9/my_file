@@ -2802,4 +2802,45 @@ int main(){
     sumofclasses(a,b);
     return 0;
 }*/
-// hello
+
+
+
+#include<iostream>
+using namespace std;
+class B;
+class A{
+    private:
+    int data;
+
+    public:
+    int setvalue(int value){
+        data=value;
+    }
+    friend void multiplication(A,B);
+};
+
+class B{
+    private:
+    int number;
+
+    public:
+    int setvalue(int value){
+        number=value;
+    }
+    friend void multiplication(A,B);
+};
+
+void multiplication(A object1, B object2){
+    cout<<"mul of both the classes are: "<<object1.data*object2.number<<endl;
+}
+
+int main(){
+    A object01;
+    B object02;
+
+    object01.setvalue(3);
+    object02.setvalue(3);
+
+    multiplication(object01,object02);
+    return 0;
+}
