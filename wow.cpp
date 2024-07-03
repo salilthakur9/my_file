@@ -2845,4 +2845,54 @@ int main(){
 
 
 
+//default constructor case
+/*#include<iostream>
+#include<string>
+using namespace std;
+class student{
+    private:
+    string name;
+    int age;
+    float fees;
+    public:
+    student(){
+        cout<<"enter name of the student:"<<endl;
+        cin.ignore();
+        getline(cin, name);
+        cout<<"enter age of the student:"<<endl;
+        cin>>age;
+        cout<<"enter fees in dollers: "<<endl;
+        cin>>fees;
+    }
+    void display(void){
+        cout<<"name: "<<name<<endl<<"age: "<<age<<endl<<"fees: "<<fees<<endl;
+    }
+};
+int main(){
+    student object;
+    // object.display();
+    return 0;
+}*/
 
+
+//parameterized constructor
+/*#include<iostream>
+using namespace std;
+class complex{
+    int a,b;
+    public:
+    complex(int x, int y){
+        a=x;
+        b=y;
+    }
+
+    void printfunc(){
+        cout<<"the number is "<<a<<" + "<<b<<"i"<<endl;
+    }
+};
+
+int main(){
+    complex object(5, 6);
+    object.printfunc();
+    return 0;
+}*/
