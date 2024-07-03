@@ -883,90 +883,23 @@ public class Main{
 }*/
 
 
+/*class Person{
+    String name;
+    int age;
 
-import java.util.ArrayList;
-import java.util.List;
-
-// Define Incident class
-class Incident {
-    // Remove unused fields
-}
-
-// Define Volunteer class
-class Main {
-    // Remove unused fields
-}
-
-// Define Resource class
-class Resource {
-    // Remove unused fields
-}
-
-public class DisasterManagementApp {
-    private List<Incident> incidentReports = new ArrayList<>();
-    private List<Volunteer> volunteers = new ArrayList<>();
-    private List<Resource> resources = new ArrayList<>();
-
-    // Method to report an incident
-    public void reportIncident(String location, String timestamp, String description) {
-        int reportId = incidentReports.size() + 1;
-        Incident incident = new Incident(reportId, location, timestamp, description);
-        incidentReports.add(incident);
-        // Notify relevant authorities and volunteers
+    public Person(String name, int age){
+        this.name = name;
+        this.age = age;
     }
 
-    // Method to register a volunteer
-    public void registerVolunteer(String name, List<String> skills, String location) {
-        int volunteerId = volunteers.size() + 1;
-        Volunteer volunteer = new Volunteer(volunteerId, name, skills, location);
-        volunteers.add(volunteer);
-    }
-
-    // Method to add a resource
-    public void addResource(String name, String location, String status) {
-        int resourceId = resources.size() + 1;
-        Resource resource = new Resource(resourceId, name, location, status);
-        resources.add(resource);
-    }
-
-    // Main method
-    public static void main(String[] args) {
-        DisasterManagementApp app = new DisasterManagementApp();
-
-        // Simulate incidents, volunteers, and resources for demonstration purposes
-        app.reportIncident("Location A", "2024-04-07 10:00:00", "Flood reported in area");
-        app.reportIncident("Location B", "2024-04-07 11:00:00", "Earthquake detected");
-
-        List<String> johnSkills = new ArrayList<>();
-        johnSkills.add("Medical");
-        johnSkills.add("Search and Rescue");
-        app.registerVolunteer("John Doe", johnSkills, "Location C");
-
-        List<String> janeSkills = new ArrayList<>();
-        janeSkills.add("Logistics");
-        janeSkills.add("Communication");
-        app.registerVolunteer("Jane Smith", janeSkills, "Location D");
-
-        app.addResource("Shelter 1", "Location E", "Available");
-        app.addResource("Medical Center", "Location F", "Unavailable");
-
-        // Example usage
-        System.out.println("Incident Reports:");
-        for (Incident incident : app.incidentReports) {
-            System.out.println("ID: " + incident.getReportId() + ", Location: " + incident.getLocation() +
-                    ", Timestamp: " + incident.getTimestamp() + ", Description: " + incident.getDescription());
-        }
-
-        System.out.println("\nRegistered Volunteers:");
-        for (Volunteer volunteer : app.volunteers) {
-            System.out.println("ID: " + volunteer.getVolunteerId() + ", Name: " + volunteer.getName() +
-                    ", Skills: " + volunteer.getSkills() + ", Location: " + volunteer.getLocation());
-        }
-
-        System.out.println("\nAvailable Resources:");
-        for (Resource resource : app.resources) {
-            System.out.println("ID: " + resource.getResourceId() + ", Name: " + resource.getName() +
-                    ", Location: " + resource.getLocation() + ", Status: " + resource.getStatus());
-        }
+    public void display(){
+        System.out.println("name: "+name);
+        System.out.println("age: "+age);
     }
 }
+public class Main{
+    public static void main(String[]args){
+        Person person1 = new Person("salil", 19);
+        person1.display();
+    }
+}*/
