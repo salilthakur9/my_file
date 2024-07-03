@@ -2805,42 +2805,44 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
-class B;
-class A{
-    private:
-    int data;
-
-    public:
-    int setvalue(int value){
-        data=value;
-    }
-    friend void multiplication(A,B);
-};
-
-class B{
+class second;
+class first{
     private:
     int number;
-
     public:
-    int setvalue(int value){
-        number=value;
+    void function1(void){
+        cin>>number;
     }
-    friend void multiplication(A,B);
+    friend int addition(first,second);
 };
 
-void multiplication(A object1, B object2){
-    cout<<"mul of both the classes are: "<<object1.data*object2.number<<endl;
+class second{
+    private:
+    int digit;
+    public:
+    void function2(void){
+        cin>>digit;
+    }
+    friend int addition(first,second);
+};
+
+int addition(first obj1, second obj2){
+    cout<<"addition of numbers in both classes are: "<<obj1.number+obj2.digit<<endl;
 }
 
 int main(){
-    A object01;
-    B object02;
+    first object1;
+    second object2;
 
-    object01.setvalue(3);
-    object02.setvalue(3);
+    object1.function1();
+    object2.function2();
 
-    multiplication(object01,object02);
+    addition(object1,object2);
     return 0;
-}
+}*/
+
+
+
+
