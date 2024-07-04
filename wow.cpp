@@ -2899,7 +2899,7 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 #include<string>
 using namespace std;
 class Person{
@@ -2949,4 +2949,71 @@ int main(){
     person2.display();
 
     return 0;
+}*/
+
+
+
+/*#include<iostream>
+#include<string>
+using namespace std;
+class Person{
+    private:
+    string name;
+    int age;
+    string address;
+
+    public:
+    Person();
+    Person(string n, int a);
+    Person(string n, int a, string addr);
+
+    void display();
+
+    void updateaddress(string newaddress);
+};
+
+Person::Person(){
+    name="UNKNOWN";
+    age=0;
+    address="NOT PROVIDED";
 }
+
+Person::Person(string n, int a){
+    name=n;
+    age=a;
+    address="NOT PROVIDED";
+}
+
+Person::Person(string n, int a, string addr){
+    name=n;
+    age=a;
+    address=addr;
+}
+
+void Person::display(){
+    cout<<"name: "<<name<<endl;
+    cout<<"age: "<<age<<endl;
+    cout<<"address: "<<address<<endl;
+}
+
+void Person::updateaddress(string newaddress){
+    address=newaddress;
+}
+
+int main(){
+    Person person1;
+    Person person2("salil thakur", 19);
+    Person person3("salil thakur", 19, "jk streets-143");
+
+    person1.display();
+    person2.display();
+    person3.display();
+
+    person2.updateaddress("newday street-144");
+    person2.display();
+
+    return 0;
+}*/
+
+
+
