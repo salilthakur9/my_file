@@ -3017,3 +3017,40 @@ int main(){
 
 
 
+#include<iostream>
+#include<string>
+using namespace std;
+class clashofclans{
+    int townhalllevel;
+    int builderhalllevel;
+    int xplevel;
+    public:
+    void townhall(){
+        cout<<"enter the level of your town hall: "<<endl;
+        cin>>townhalllevel;
+    }
+    void builderhall(){
+        cout<<" enter the level of your builder hall: "<<endl;
+        cin>>builderhalllevel;
+    }
+    void xp(){
+        cout<<"enter the level of your xp: "<<endl;
+        cin>>xplevel;
+    }
+    void checklevel(){
+        if(townhalllevel<=5 && builderhalllevel<=4){
+            cout<<"you are fucking nigga"<<endl;
+        }else if(xplevel<75){
+            cout<<"you are fucking nigga"<<endl;
+        }
+    }
+};
+int main(){
+    clashofclans object;
+    object.townhall();
+    object.builderhall();
+    object.xp();
+    object.checklevel();
+
+    return 0;
+}
