@@ -2896,3 +2896,57 @@ int main(){
     object.printfunc();
     return 0;
 }*/
+
+
+
+#include<iostream>
+#include<string>
+using namespace std;
+class Person{
+    private:
+    string name;
+    int age;
+    string address;
+
+    public:
+    Person(){
+        name="UNKNOWN";
+        age=0;
+        address="NOT PROVIDE";
+    }
+
+    Person(string n, int a){
+        name=n;
+        age=a;
+        address="NOT PROVIDE";
+    }
+
+    Person(string n, int a, string addr){
+        name=n;
+        age=a;
+        address=addr;
+    }
+
+    void display() const{
+        cout<<"name: "<<name<<", age: "<<age<<", address: "<<address<<endl;
+    }
+
+    void updateAddress(string newAddress){
+        address = newAddress;
+    }
+};
+
+int main(){
+    Person person1;
+    Person person2("salil", 19);
+    Person person3("thakur",19,"123 main street");
+
+    person1.display();
+    person2.display();
+    person3.display();
+
+    person2.updateAddress("456 new street");
+    person2.display();
+
+    return 0;
+}
