@@ -3017,7 +3017,7 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 #include<string>
 using namespace std;
 class clashofclans{
@@ -3053,4 +3053,47 @@ int main(){
     object.checklevel();
 
     return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+class first{
+    private:
+    double principal_amount;
+    double rate_of_interest;
+    double time;
+    double SI;
+    double tAmount;
+    public:
+    void input(){
+        cout<<"enter principal amount: "<<endl;
+        cin>>principal_amount;
+
+        cout<<"enter rate of interest: "<<endl;
+        cin>>rate_of_interest;
+
+        cout<<"enter time taken: "<<endl;
+        cin>>time;
+    }
+    void simpleinterest(){
+        cout<<"simple interest is: "<<endl;
+        SI=(principal_amount*rate_of_interest*time)/100;
+        cout<<SI<<endl;
+    }
+    void amount(){
+    cout<<"total amount is: "<<endl;
+    tAmount=principal_amount+SI;
+    cout<<tAmount; 
 }
+};
+
+int main(){
+    first object;
+    object.input();
+    object.simpleinterest();
+    object.amount();
+
+    return 0;
+}*/

@@ -28,9 +28,28 @@ console.log(item["salil"])
 console.log(item["salil"], item["thakur"])*/
 
 
-let a="salil"
+/*let a="salil"
 let b=4
 console.log(a+b)
 console.log(typeof (a+b))
 console.log(typeof a)
-console.log(typeof b)
+console.log(typeof b)*/
+
+
+/*const dict={
+    salil:"water",
+    thakur:"cast",
+}
+console.log(dict.salil)
+console.log(dict.thakur)
+console.log(dict["thakur"])
+console.log(dict['thakur'])*/
+
+
+let a=10;
+let b=2;
+console.log("a+b= ",a+b)
+console.log("a-b= ",a-b)
+console.log("a*b= ",a*b)
+console.log("a/b= ",a/b)
+console.log("a%b= ",a%b)
