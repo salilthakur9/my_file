@@ -46,10 +46,18 @@ console.log(dict["thakur"])
 console.log(dict['thakur'])*/
 
 
-let a=10;
+/*let a=10;
 let b=2;
 console.log("a+b= ",a+b)
 console.log("a-b= ",a-b)
 console.log("a*b= ",a*b)
 console.log("a/b= ",a/b)
-console.log("a%b= ",a%b)
+console.log("a%b= ",a%b)*/
+
+
+a=56,b=7;
+if(a>b){
+    console.log("hello")
+}else{
+    console.log("hi")
+}
