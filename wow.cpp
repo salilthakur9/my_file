@@ -3127,3 +3127,34 @@ int main() {
     cout << "Smallest element: " << smallest << endl;
     return 0;
 }*/
+
+
+
+ #include<iostream>
+ using namespace std;
+class number{
+    int a;
+    public:
+    number(){
+    }
+    number(int num){
+        a=num;
+    }
+    number(number &object){
+        cout<<"copy constructor said that! "<<endl;
+        a=object.a;
+    }
+    void display(){
+        cout<<"the number for the object is: "<<a<<endl;
+    }
+};
+int main(){
+    number x(456789),y,z(345678);
+    x.display();
+    y.display();
+    z.display();
+    number z1(z);
+    z1.display();
+
+    return 0;
+}
