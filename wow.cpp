@@ -3130,7 +3130,7 @@ int main() {
 
 
 
- #include<iostream>
+ /*#include<iostream>
  using namespace std;
 class number{
     int a;
@@ -3157,4 +3157,72 @@ int main(){
     z1.display();
 
     return 0;
+}*/
+
+
+
+/*#include <iostream>
+#include <string.h>
+using namespace std;
+class student {
+	int rno;
+	char name[50];
+	double fee;
+
+public:
+	student(int, char[], double);
+	student(student& t) // copy constructor
+	{
+		rno = t.rno;
+		strcpy(name, t.name);
+		fee = t.fee;
+	}
+	void display();
+};
+
+student::student(int no, char n[], double f)
+{
+	rno = no;
+	strcpy(name, n);
+	fee = f;
 }
+
+void student::display()
+{
+	cout << endl << rno << "\t" << name << "\t" << fee;
+}
+
+int main()
+{
+	student s(1001, "Manjeet", 10000);
+	s.display();
+
+	student manjeet(s); // copy constructor called
+	manjeet.display();
+
+	return 0;
+}*/
+
+
+
+ /*#include<iostream>
+ using namespace std;
+class number{
+    int a;
+    public:
+    number(){}
+    number(int num){
+        a=num;
+    }
+    void display(){
+        cout<<"the number for the object is: "<<a<<endl;
+    }
+};
+int main(){
+    number x,y,z(3);
+    x.display();
+    y.display();
+    z.display();
+
+    return 0;
+}*/

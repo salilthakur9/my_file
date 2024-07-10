@@ -55,9 +55,14 @@ console.log("a/b= ",a/b)
 console.log("a%b= ",a%b)*/
 
 
-a=56,b=7;
+/*a=56,b=7;
 if(a>b){
     console.log("hello")
 }else{
     console.log("hi")
+}*/
+
+let n;
+for(let i=0;i<n;i++){
+    console.log(i)
 }
