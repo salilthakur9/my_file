@@ -3392,3 +3392,33 @@ int main(){
 
 
 
+/*#include<iostream>
+using namespace std;
+class Sum{
+    public:
+    int sum(int a[],int size){
+        int total=0;
+        for(int i=0;i<size;i++){
+            total=total+a[i];
+        }
+        return total;
+    }
+};
+
+class ExtentedSum: public Sum{
+    public:
+    void displaySum(int a[], int size){
+        cout<<"Sum of array elements is: "<<sum(a, size)<<endl;
+    }
+};
+int main(){
+    ExtentedSum em;
+    int arr[]={1,2,3,4,5,6,7,8,9,10};
+    int size=sizeof(arr)/sizeof(arr[0]);
+    em.displaySum(arr,size);
+
+    return 0;
+}*/
+
+
+
