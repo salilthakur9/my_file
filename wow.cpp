@@ -3446,7 +3446,7 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 class base{
     public:
@@ -3465,4 +3465,32 @@ class Derived : public base{
 int main(){
     Derived d(10,20);
     return 0;
-}
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+class Base{
+    public:
+    Base(){
+        cout<<"base default constructor called."<<endl;
+    }
+    Base(int x){
+        cout<<"base constructor is called with value of x: "<<x<<endl;
+    }
+};
+class Derived : public Base{
+    public:
+    using Base::Base;
+    Derived(){
+        cout<<"derived default constructor is called."<<endl;
+    }
+};
+int main(){
+    Derived d1,d2(10);
+    return 0;
+}*/
+
+
+
