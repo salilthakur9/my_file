@@ -3229,7 +3229,7 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 #include<string>
 using namespace std;
 class Person{
@@ -3289,4 +3289,57 @@ int main(){
     person2.display();
 
     return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+//base class
+class Employee{
+    public:
+    int id;
+    float salary;
+    Employee(int intId){
+        id=intId;
+        salary = 34;
+    }
+    Employee(){}
+};
+//derived class
+//syntax
+/*class {{derived-class-name}} : {{visibility-mode}} {{base-class-name}}
+{
+    members/methods/etc...
 }
+note:
+1. default visibility mode is private.
+2. Public visibility mode: public members of the base class becomes public members of the derived class.
+3. Private visibility mode: public members of the base class becomes Private members of the derived class.
+4. Private members never inherited.
+*/
+
+/*class programmer: public Employee{
+    public:
+    programmer(int impid){
+        id=impid;
+    }
+    int languagecode = 9;
+    void getData(){
+        cout<<id<<endl;
+    }
+};
+
+int main(){
+    Employee harry(1), rohan(2);
+    cout<<harry.salary<<endl;
+    cout<<rohan.salary<<endl;
+
+    programmer skillF(10);
+    cout<<skillF.languagecode<<endl;
+    skillF.getData();
+    return 0;
+}*/
+
+
+
