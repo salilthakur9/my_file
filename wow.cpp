@@ -3422,3 +3422,47 @@ int main(){
 
 
 
+//this is simple example for inheritance with constructors
+/*#include<iostream>
+using namespace std;
+class Base{
+    public:
+    Base(){
+        cout<<"this is base class constructor."<<endl;
+    }
+};
+
+class Derived : public Base{
+    public:
+    Derived(){
+        cout<<"this is derived class constructor."<<endl;
+    }
+};
+
+int main(){
+    Derived d;
+    return 0;
+}*/
+
+
+
+#include<iostream>
+using namespace std;
+class base{
+    public:
+    base(int x){
+        cout<<"base class constructor is called with value: "<<x<<endl;
+    }
+};
+
+class Derived : public base{
+    public:
+    Derived(int x, int y):base(x){
+        cout<<"derived class constructor is called with value: "<<y<<endl;
+    }
+};
+
+int main(){
+    Derived d(10,20);
+    return 0;
+}
