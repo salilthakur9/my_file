@@ -3343,7 +3343,7 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 class Sum{
     public:
@@ -3361,4 +3361,34 @@ int main(){
     ExtendedSum em;
     em.displaySum(3, 7);
     return 0;
-}
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+class Sum{
+    public:
+    int sum(int a,int b){
+        return a+b;
+    }
+};
+class ExtentedSum : public Sum{
+    public:
+    int sum(int a, int b,int c){
+        return a+b+c;
+    }
+    void displaySum(int a, int b, int c){
+        cout<<"sum of "<<a<<" + "<<b<<" = "<<a+b<<endl;
+        cout<<"sum of "<<a<<" + "<<b<<" + "<<c<<" = "<<a+b+c<<endl;
+    }
+};
+int main(){
+    ExtentedSum em;
+    em.displaySum(10,20,30);
+
+    return 0;
+}*/
+
+
+
