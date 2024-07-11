@@ -3343,3 +3343,22 @@ int main(){
 
 
 
+#include<iostream>
+using namespace std;
+class Sum{
+    public:
+    int sum(int a,int b){
+        return a+b;
+    }
+};
+class ExtendedSum: public Sum{
+    public:
+    void displaySum(int a,int b){
+        cout<<"sum of "<<a<<" + "<<b<<" = "<<a+b<<endl;
+    }
+};
+int main(){
+    ExtendedSum em;
+    em.displaySum(3, 7);
+    return 0;
+}
