@@ -3494,3 +3494,113 @@ int main(){
 
 
 
+/*#include<iostream>
+using namespace std;
+class Base{
+    public:
+    Base(){
+        cout<<"default constructor of base class"<<endl;
+    }
+    Base(int x){
+        cout<<"constructor of base class with value of x: "<<x<<endl;
+    }
+    Base(int x, int y){
+        cout<<"constructor of base class with sum of x and y is: "<<x+y<<endl;
+    }
+};
+class Derived:public Base{
+    using Base::Base;
+};
+int main(){
+    Derived d;
+    Derived d2(5),d3(5,10);
+    return 0;
+}*/
+
+
+
+//multiple inheritance example:
+/*#include<iostream>
+using namespace std;
+class Base1{
+    public:
+    Base1(){
+        cout<<"base1 constructor"<<endl;
+    }
+    void display1(){
+        cout<<"base1 function"<<endl;
+    }
+};
+
+class Base2{
+    public:
+    Base2(){
+        cout<<"base2 constructor"<<endl;
+    }
+    void display2(){
+        cout<<"base2 function"<<endl;
+    }
+};
+
+class Derived:public Base1, public Base2{
+    public:
+    Derived(){
+        cout<<"derived constructor"<<endl;
+    }
+    void display3(){
+        cout<<"Derived function"<<endl;
+    }
+};
+int main(){
+    Derived d;
+    d.display1();
+    d.display2();
+    d.display3();
+
+    return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+class Base{
+    public:
+    Base(){
+        cout<<"default base constructor is called."<<endl;
+    }
+    void display(void){
+        cout<<"function of default constructor is called."<<endl;
+    }
+};
+
+class Derived1 : virtual public Base{
+    public:
+    Derived1(){
+        cout<<"Derived1 constructor is called"<<endl;
+    }
+};
+
+class Derived2 :virtual public Base{
+    public:
+    Derived2(){
+        cout<<"Derived2 constructor is called"<<endl;
+    }
+};
+
+class MostDerived : public Derived1, public Derived2{
+    public:
+    MostDerived(){
+        cout<<"mostDerived constructor is called."<<endl;
+    }
+};
+
+int main(){
+    MostDerived ms;
+    ms.display();
+
+    return 0;
+}*/
+
+
+
