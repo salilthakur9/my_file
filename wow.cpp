@@ -3656,3 +3656,27 @@ int main() {
 
 
 
+#include<iostream>
+using namespace std;
+class Base{
+    protected:
+    int a;
+    private:
+    int b;
+};
+/*
+for a protected number
+                    public derivation       private derivation      protected derivation
+1. private mem      not inherited           not inherited           not inherited
+2. protected mem    protected               Privare                 protected
+3. public mem       public                  Private                 protected
+*/
+class Derived : protected Base{
+
+};
+int main(){
+    Base b;
+    Derived d;
+    // cout<<d.a; it will not work cause (a) is protected in both base and derived class.
+    return 0;
+}
