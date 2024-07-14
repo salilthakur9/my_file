@@ -3656,7 +3656,7 @@ int main() {
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 class Base{
     protected:
@@ -3671,7 +3671,7 @@ for a protected number
 2. protected mem    protected               Privare                 protected
 3. public mem       public                  Private                 protected
 */
-class Derived : protected Base{
+/*class Derived : protected Base{
 
 };
 int main(){
@@ -3679,4 +3679,62 @@ int main(){
     Derived d;
     // cout<<d.a; it will not work cause (a) is protected in both base and derived class.
     return 0;
+}*/
+
+
+
+/*#include <iostream>
+using namespace std;
+
+class Student {
+protected:
+    int roll_number;
+public:
+    void set_roll_number(int);
+    void get_roll_number(void);
+};
+
+void Student::set_roll_number(int r) {
+    roll_number = r;
 }
+
+void Student::get_roll_number() {
+    cout << "The roll number is: " << roll_number << endl;
+}
+
+class Exam : public Student {
+protected:
+    float maths;
+    float physics;
+public:
+    void set_marks(float, float);
+    void get_marks(void);
+};
+
+void Exam::set_marks(float m1, float m2) {
+    maths = m1;
+    physics = m2;
+}
+
+void Exam::get_marks() {
+    cout << "The marks obtained in maths are: " << maths << endl;
+    cout << "The marks obtained in physics are: " << physics << endl;
+}
+
+class Result : public Exam {
+    float percentage;
+public:
+    void display_result() {
+        get_roll_number();
+        get_marks();
+        cout << "Your percentage is: " << (maths + physics) / 2 << endl;
+    }
+};
+
+int main() {
+    Result salil;
+    salil.set_roll_number(877);
+    salil.set_marks(69.0, 96.0);  
+    salil.display_result();
+    return 0;
+}*/
