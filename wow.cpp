@@ -3738,3 +3738,11 @@ int main() {
     salil.display_result();
     return 0;
 }*/
+
+
+
+/*
+if we are inheriting B from A and C from B: [A-->B-->C]
+1. A is the base class for B and B is the base class for C.
+2. A-->B-->C is called inheritance path.
+*/
