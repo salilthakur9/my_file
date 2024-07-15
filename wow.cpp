@@ -3786,3 +3786,51 @@ int main(){
 
     return 0;
 }*/
+
+
+
+#include<iostream>
+using namespace std;
+class Acd{
+    protected:
+    int roll_number;
+    public:
+    void set_roll_number(int r){
+        roll_number = r;
+    }
+    void get_roll_number(void){
+        cout<<"roll number: "<<roll_number<<endl;
+    }
+};
+
+class sports{
+    protected:
+    int scores;
+    public:
+    void set_score(int s){
+        scores=s;
+    }
+    void get_score(){
+        cout<<"sports score: "<<scores<<endl;
+    }
+};
+
+class Student : public Acd, public sports{
+    public:
+    void display(){
+        get_roll_number();
+        get_score();
+    }
+};
+
+int main(){
+    Student kid;
+    kid.set_roll_number(877);
+    kid.set_score(99);
+    kid.display();
+
+    return 0;
+}
+
+
+
