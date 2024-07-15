@@ -3789,7 +3789,7 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 class Acd{
     protected:
@@ -3830,7 +3830,59 @@ int main(){
     kid.display();
 
     return 0;
-}
+}*/
 
 
 
+/*#include<iostream>
+using namespace std;
+class Acd{
+    protected:
+    int roll_number;
+    public:
+    Acd(int roll) : roll_number(roll){}
+    void display_roll_number(){
+        cout<<"Roll number: "<<roll_number<<endl;
+    }
+};
+
+class Sports {
+    protected:
+    int score;
+    public:
+    Sports(int scr) : score(scr){}
+    void display_score(){
+        cout<<"Sports score: "<<score<<endl;
+    }
+};
+
+class Personal {
+    protected:
+    string name;
+    int age;
+    public:
+    Personal(string n, int a) : name(n), age(a){}
+
+    void display_personal_info(){
+        cout<<"Name: "<<name<<", Age: "<<age<<endl;
+    }
+};
+
+class Student : public Acd, public Sports, public Personal{
+    public:
+    Student(int roll, int scr, string n, int a): Acd(roll), Sports(scr), Personal(n,a){}
+    
+    void Display_info(){
+        display_personal_info();
+        display_roll_number();
+        display_score();
+
+    }
+};
+
+int main(){
+    Student stu(123,95,"salil",19);
+    stu.Display_info();
+
+    return 0;
+}*/
