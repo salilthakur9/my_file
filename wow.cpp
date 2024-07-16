@@ -3907,3 +3907,91 @@ int main(){
 
 
 
+/*create 2 classes:
+1. simple calculator - takes input of 2 number using a utility function and performs +,-,*,/ and display using another function
+2. scientific calculator - takes input of 2 number using a utility function and performs any 4 scientific operations of your choice and display the result using another function. 
+create another class hybrid calculator and inherit it using these classes.
+q1. what type of inheritance are you using?
+q2. which mode of inheritance are you using?
+*/
+
+// ANS).
+
+/*#include<iostream>
+using namespace std;
+class simple_calculator{
+    protected:
+    int num1,num2;
+    char op;
+    public:
+    void get_numbers();
+    void operation();
+};
+
+void simple_calculator :: get_numbers(){
+    cout<<"enter first number: "<<endl;
+    cin>>num1;
+    cout<<"enter second number: "<<endl;
+    cin>>num2;
+    cout<<"enter operation you want to perform(+,-,*,/): "<<endl;
+    cin>>op;
+}
+
+void simple_calculator :: operation(){
+    if(op=='+'){
+        cout<<"sum: "<<num1+num2<<endl;
+    }else if(op=='-'){
+        cout<<"sub: "<<num1-num2<<endl;
+    }else if(op=='*'){
+        cout<<"mul: "<<num1*num2<<endl;
+    }else if(op=='/'){
+        cout<<"div: "<<num1/num2<<endl;
+    }else{
+        cout<<"false input";
+    }
+}
+
+class Scientific_calculator : public simple_calculator{
+    int sci_op;
+    public:
+    void set_operation();
+    void sci_operation();
+};
+
+void Scientific_calculator :: set_operation(){
+    cout<<"enter 2 for square and 3 for cube of both numbers: "<<endl;
+    cin>>sci_op;
+}
+
+void Scientific_calculator :: sci_operation(){
+    if(sci_op == 2){
+        cout<<"square for number 1 is: "<<num1*num1<<endl;
+        cout<<"square for number 2 is: "<<num2*num2<<endl;
+    }else if(sci_op == 3){
+        cout<<"cube for number 1 is: "<<num1*num1*num1<<endl;
+        cout<<"cube for number 2 is: "<<num2*num2*num2<<endl;
+    }else{
+        cout<<"false input";
+    }
+}
+
+class Hybrid_calculator : public Scientific_calculator{
+    public:
+    void hybrid();
+};
+
+void Hybrid_calculator :: hybrid(){
+    get_numbers();
+    operation();
+    set_operation();
+    sci_operation();
+}
+int main(){
+    Hybrid_calculator hc;
+    hc.hybrid();
+
+    return 0;
+}*/
+
+
+
