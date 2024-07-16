@@ -3886,3 +3886,24 @@ int main(){
 
     return 0;
 }*/
+
+
+
+/*#include<iostream>
+using namespace std;
+class sum{
+    int a,b;
+    public:
+    int display(){
+        cin>>a>>b;
+        cout<<a+b;
+    }
+};
+int main(){
+    sum s;
+    s.display();
+    return 0;
+}*/
+
+
+
