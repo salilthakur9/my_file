@@ -62,7 +62,15 @@ if(a>b){
     console.log("hi")
 }*/
 
-let n;
+/*let n=5;
 for(let i=0;i<n;i++){
     console.log(i)
+}*/
+
+
+let a=1;
+if(a===10){
+    console.log("it's 10");
+}else{
+    console.log("it's not 10");
 }
