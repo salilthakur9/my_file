@@ -148,3 +148,26 @@ if(result){
 
 
 
+/*function convert_num_to_str(num){
+    const numString = num.toString();
+    const firstDigit = numString.charAt(0);
+
+    return parseInt(firstDigit, 10);
+}
+
+function have_first_digit(num1,num2){
+    const digit1= convert_num_to_str(num1);
+    const digit2= convert_num_to_str(num2);
+
+    return digit1===digit2;
+}
+
+const num1=100;
+const num2=200;
+const result= have_first_digit(num1,num2);
+
+if(result){
+    console.log(`${num1} and ${num2} have their first digit same!`);
+}else{
+    console.log(`${num1} and ${num2} does not have first digit same!`);
+}*/
