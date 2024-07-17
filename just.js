@@ -76,9 +76,27 @@ if(a===10){
 }*/
 
 
-let s="Apple";
+/*let s="Apple";
 if((s[0]=='a'|| s[0]=='A') && (s.length>3)){
     console.log("good string");
 }else{
     console.log("bad string");
+}*/
+
+
+//true for blank space in string:
+/*if(" "){
+    console.log("true");
+}
+else{
+    console.log("false");
+}*/
+
+
+// false for empty string:
+if(""){
+    console.log("true");
+}
+else{
+    console.log("false");
 }
