@@ -190,10 +190,17 @@ console.log(msg);*/
 
 
 
-const name="Salil";
+/*const name="Salil";
 let n=name.toUpperCase();
 console.log(n);
 
 const last_name="Thakur";
 let l=last_name.toLowerCase();
-console.log(l);
+console.log(l);*/
+
+
+
+// to find the index of any digit within the string!
+/*const msg="i love coding";
+const m=msg.indexOf("i");
+console.log(m);*/
