@@ -4057,3 +4057,17 @@ int main() {
     }
     return 0;
 }*/
+
+
+
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    vector<int>myvector;
+    myvector.push_back(4999);
+    cout<<"first element: "<<myvector[0]<<endl;
+    myvector.push_back(99);
+    cout<<"element at second place is: "<<myvector.at(1);
+    return 0;
+}
