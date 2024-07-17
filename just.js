@@ -122,3 +122,29 @@ if (result) {
 
 
 
+/*function convert_num_to_str(num){
+    const numString = num.toString();
+    const firstDigit = numString.charAt(0);
+
+    return parseInt(firstDigit, 10);
+}
+
+function have_first_number(num1,num2){
+    const firstDigit= convert_num_to_str(num1);
+    const secondDigit= convert_num_to_str(num2);
+
+    return firstDigit===secondDigit;
+}
+
+const num1=101;
+const num2=502;
+const result= have_first_number(num1,num2);
+
+if(result){
+    console.log(`${num1} and ${num2} have same first digit!`);
+}else{
+    console.log(`${num1} and ${num2} do not have same first digit!`);
+}*/
+
+
+
