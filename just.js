@@ -171,3 +171,9 @@ if(result){
 }else{
     console.log(`${num1} and ${num2} does not have first digit same!`);
 }*/
+
+
+
+let msg="    hello    ";
+let trimed=msg.trim();
+console.log(trimed);
