@@ -174,6 +174,26 @@ if(result){
 
 
 
-let msg="    hello    ";
+/*let msg="    hello    ";
 let trimed=msg.trim();
+console.log(trimed);*/
+
+
+
+//this shows us that strings in js are immutable!
+/*let msg="   hello     ";
+let trimed= msg.trim();
 console.log(trimed);
+console.log(msg);
+msg="hello";
+console.log(msg);*/
+
+
+
+const name="Salil";
+let n=name.toUpperCase();
+console.log(n);
+
+const last_name="Thakur";
+let l=last_name.toLowerCase();
+console.log(l);
