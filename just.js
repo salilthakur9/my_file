@@ -68,9 +68,17 @@ for(let i=0;i<n;i++){
 }*/
 
 
-let a=1;
+/*let a=1;
 if(a===10){
     console.log("it's 10");
 }else{
     console.log("it's not 10");
+}*/
+
+
+let s="Apple";
+if((s[0]=='a'|| s[0]=='A') && (s.length>3)){
+    console.log("good string");
+}else{
+    console.log("bad string");
 }
