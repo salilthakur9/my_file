@@ -4107,3 +4107,22 @@ int main(){
 
     return 0;
 }*/
+
+
+
+/*#include<iostream>
+using namespace std;
+inline int product (int x){
+    return (x*x)+5;
+}
+int main(){
+    int x;
+    cout<<"enter the value of x: "<<endl;
+    cin>>x;
+
+    cout<<"ans: "<<product(x)<<endl;  
+    return 0;
+}*/
+
+
+
