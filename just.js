@@ -258,7 +258,7 @@ console.log(name);*/
 // 1. PUSH: add to end.
 // 2. UNSHIFT: add to start.
 // 3. POP: delete from end and returns it.
-// 4. SHIFT: delete from start and return it.4
+// 4. SHIFT: delete from start and return it.
 
 
 //PUSH:
@@ -279,3 +279,14 @@ let newcar= cars.pop();
 console.log(newcar);
 console.log(cars);
 console.log(cars.length);*/
+
+
+//SHIFT:
+/*let letters=["a","b","c","d"];
+console.log("before using shift: ", letters);
+console.log("length of the arrayb before using shift: ",letters.length);
+console.log("if we use shift this is what we got deleted from array letters: ",letters.shift());
+console.log("after using shift: ", letters);
+console.log("length of an array after using shift: ",letters.length);*/
+
+
