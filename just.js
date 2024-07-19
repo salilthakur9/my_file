@@ -225,3 +225,8 @@ console.log(a.slice(5,6));*/
 
 
 
+/*let msg="salil thakur";
+console.log(msg.replace("s", "S"));
+console.log(msg.replace("salil", "SALIL"));
+console.log(msg.replace("thakur", "THAKUR"));
+console.log(msg.replace("salil", "SALIL").replace("thakur", "THAKUR"));*/
