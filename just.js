@@ -290,3 +290,17 @@ console.log("after using shift: ", letters);
 console.log("length of an array after using shift: ",letters.length);*/
 
 
+// let numbers=[1,2,3];
+// console.log("before unshift the array numbers is: ", numbers);
+// console.log("length of the araay before unshift: ",numbers.length);
+// console.log("by using unshift we are adding this array element: ", numbers.unshift(0));
+// console.log("after using unshift we got this araay: ", numbers);
+// console.log("length of araay after using unshift is: ",numbers.length);
+
+/*let numbers = [1,2,3];
+console.log("before unshift the array numbers is: ", numbers);
+console.log("length of the array before unshift: ", numbers.length);
+numbers.unshift(0);  // Add 0 to the beginning of the array
+console.log("by using unshift we added this element: 0");
+console.log("after using unshift we got this array: ", numbers);
+console.log("length of array after using unshift is: ", numbers.length);*/

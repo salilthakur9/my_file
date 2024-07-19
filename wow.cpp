@@ -4126,3 +4126,23 @@ int main(){
 
 
 
+/*#include<iostream>
+using namespace std;
+void func(string email="example@gmail.com", string subject="no subject", string body="no-body"){
+    cout<<"send mail to : "<<email<<endl;
+    cout<<"sub: "<<subject<<endl;
+    cout<<"body: "<<endl;
+}
+int main(){
+    string email="example@gmail.com";
+    string subject="no subject";
+    func();
+    func("salil@gmail.com");
+    func("salilthakur@gmail.com","oops","no");
+    func(email,subject,"custom body");
+
+    return 0;
+}*/
+
+
+
