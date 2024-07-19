@@ -207,8 +207,14 @@ console.log(m);*/
 
 
 
-let msg="salil   ";
+/*let msg="salil   ";
 let newmsg=msg.trim();
 console.log("after trim: ", newmsg);
 newmsg= newmsg.toUpperCase();
 console.log("after uppercase: ", newmsg);
+const text="      thakur";
+const newtext=text.trim().toUpperCase();
+console.log("so by using method chaining: ", newtext);*/
+
+
+
