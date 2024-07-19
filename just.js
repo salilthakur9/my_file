@@ -247,3 +247,15 @@ console.log(typeof student)*/
 
 
 
+/*let name=["salil", "thakur"];
+name[0]="thakur";
+console.log(name);
+name[10]="salil_thakur";
+console.log(name);*/
+
+
+//ARRAY METHODS:
+// 1. PUSH: add to end.
+// 2. UNSHIFT: add to start.
+// 3. POP: delete from end and returns it.
+// 4. SHIFT: delete from start and return it.
