@@ -230,3 +230,20 @@ console.log(msg.replace("s", "S"));
 console.log(msg.replace("salil", "SALIL"));
 console.log(msg.replace("thakur", "THAKUR"));
 console.log(msg.replace("salil", "SALIL").replace("thakur", "THAKUR"));*/
+
+
+
+/*let student = ["salil", "thakur"];
+console.log(student);
+console.log(student[2]);
+console.log(student.length);
+console.log(typeof student)*/
+
+
+//types to create array:
+//1. let marks=[1,2,3,4,5];
+//2. let names=["salil", "thakur"];
+//3. let info=["salil", 12, 2.5];
+
+
+
