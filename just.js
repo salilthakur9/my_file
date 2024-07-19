@@ -204,3 +204,11 @@ console.log(l);*/
 /*const msg="i love coding";
 const m=msg.indexOf("i");
 console.log(m);*/
+
+
+
+let msg="salil   ";
+let newmsg=msg.trim();
+console.log("after trim: ", newmsg);
+newmsg= newmsg.toUpperCase();
+console.log("after uppercase: ", newmsg);
