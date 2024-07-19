@@ -218,3 +218,10 @@ console.log("so by using method chaining: ", newtext);*/
 
 
 
+/*let a="salil thakur";
+console.log(a.slice(0,-4));
+console.log(a.slice(0, a.length));
+console.log(a.slice(5,6));*/
+
+
+
