@@ -258,4 +258,24 @@ console.log(name);*/
 // 1. PUSH: add to end.
 // 2. UNSHIFT: add to start.
 // 3. POP: delete from end and returns it.
-// 4. SHIFT: delete from start and return it.
+// 4. SHIFT: delete from start and return it.4
+
+
+//PUSH:
+/*let cars=["audi", "lambo", "xuv"];
+console.log(cars);
+console.log(cars.length);
+
+cars.push("toyota");
+console.log(cars);
+console.log(cars.length);
+
+cars.push("kia");
+console.log(cars);
+console.log(cars.length);
+
+//POP:
+let newcar= cars.pop();
+console.log(newcar);
+console.log(cars);
+console.log(cars.length);*/
