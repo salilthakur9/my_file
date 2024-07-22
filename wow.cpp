@@ -1,5 +1,4 @@
-/*#include <iostream>
-
+/*#include <bits/stdc++.h>
 int main() {
     std::cout << "Those 3am thoughts:)";
 
@@ -4126,7 +4125,7 @@ int main(){
 
 
 
-/*#include<iostream>
+/*#include<bits/stdc++.h>
 using namespace std;
 void func(string email="example@gmail.com", string subject="no subject", string body="no-body"){
     cout<<"send mail to : "<<email<<endl;
@@ -4146,3 +4145,36 @@ int main(){
 
 
 
+#include<iostream>
+#include<string>
+using namespace std;
+
+class binary {
+private:
+    string s;
+public:
+    void read(void);
+    void check(void);
+};
+
+void binary::read(void) {
+    cout << "Enter a binary number: ";
+    cin >> s;
+}
+
+void binary::check(void) {
+    for (int i = 0; i < s.length(); i++) {
+        if (s.at(i) != '0' && s.at(i) != '1') {
+            cout << "Incorrect binary number" << endl;
+            exit(0);
+        }
+    }
+    cout << "Correct binary number" << endl;
+}
+
+int main() {
+    binary b;
+    b.read();
+    b.check();
+    return 0;
+}

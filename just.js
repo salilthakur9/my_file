@@ -304,3 +304,20 @@ numbers.unshift(0);  // Add 0 to the beginning of the array
 console.log("by using unshift we added this element: 0");
 console.log("after using unshift we got this array: ", numbers);
 console.log("length of array after using unshift is: ", numbers.length);*/
+
+
+
+/*let month = ["jan", "july", "march", "aug"];
+console.log("before doing anyhting our array month looks like: ", month);
+new_month = month.shift();
+console.log("after using shift one time we deleted: ", new_month);
+console.log("after deleting ", new_month,"we got this array: ", month);
+another_month = month.shift();
+console.log("after using shift second time we dlt this: ", another_month);
+console.log("now after doing 2 shifts or deleting ", new_month," and ", another_month," we got this array: ", month);
+add_month1= month.unshift("june");
+add_month2= month.unshift("aug");
+console.log("after using unshift we add ", add_month1," and ", add_month2);
+console.log("the final array is : ", month);
+month.unshift("april", "dec");
+console.log(month);*/
