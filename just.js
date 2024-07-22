@@ -338,3 +338,15 @@ console.log(e);*/
 
 
 
+/*let primary = ["salil", "thakur"];
+let secondary = ["thakur", "salil"];
+
+a= primary.concat(secondary);
+b= secondary.concat(primary);
+console.log(a);
+console.log(b);
+
+c=primary.reverse();
+console.log(c);
+d=primary.reverse();
+console.log(d);*/
