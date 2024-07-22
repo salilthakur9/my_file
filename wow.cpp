@@ -4145,36 +4145,3 @@ int main(){
 
 
 
-#include<iostream>
-#include<string>
-using namespace std;
-
-class binary {
-private:
-    string s;
-public:
-    void read(void);
-    void check(void);
-};
-
-void binary::read(void) {
-    cout << "Enter a binary number: ";
-    cin >> s;
-}
-
-void binary::check(void) {
-    for (int i = 0; i < s.length(); i++) {
-        if (s.at(i) != '0' && s.at(i) != '1') {
-            cout << "Incorrect binary number" << endl;
-            exit(0);
-        }
-    }
-    cout << "Correct binary number" << endl;
-}
-
-int main() {
-    binary b;
-    b.read();
-    b.check();
-    return 0;
-}

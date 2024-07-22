@@ -321,3 +321,20 @@ console.log("after using unshift we add ", add_month1," and ", add_month2);
 console.log("the final array is : ", month);
 month.unshift("april", "dec");
 console.log(month);*/
+
+
+
+/*let arr=[1,2,3,4,5,6,7,8,9,0];
+a= arr.includes(2);
+b= arr.includes(10);
+console.log(a);
+console.log(b);
+c= arr.indexOf(1);
+d= arr.indexOf(0);
+e= arr.indexOf(11);
+console.log(c);
+console.log(d);
+console.log(e);*/
+
+
+
