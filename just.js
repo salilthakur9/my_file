@@ -350,3 +350,17 @@ c=primary.reverse();
 console.log(c);
 d=primary.reverse();
 console.log(d);*/
+
+
+
+let arr=[1,2,3,4,5];
+
+a=arr.slice();
+b=arr.slice(2);
+c=arr.slice(0);
+d=arr.slice(-1);
+e=arr.slice(arr.length-1);
+
+console.log(a,b,c,d);
+console.log(arr);
+console.log(e);
