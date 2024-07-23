@@ -353,7 +353,7 @@ console.log(d);*/
 
 
 
-let arr=[1,2,3,4,5];
+/*let arr=[1,2,3,4,5];
 
 a=arr.slice();
 b=arr.slice(2);
@@ -363,4 +363,24 @@ e=arr.slice(arr.length-1);
 
 console.log(a,b,c,d);
 console.log(arr);
-console.log(e);
+console.log(e);*/
+
+
+// slice returns the value by making duplicate or copy of original arrray
+// on the other hand splice returns the array that is changed in the original one.
+
+/*let cars=["audi", "bmw", "xuv", "maruti"];
+a=cars.splice(3);
+console.log(cars);
+console.log(a);
+cars.splice(0, 1);
+console.log(cars);
+cars.push("maruti", "ferrari");
+console.log(cars);
+cars.splice(1,2);
+console.log(cars);
+cars.splice(0, 0, "toyota", "xuv", "bmw");
+console.log(cars);
+cars.splice(1, 0,"mercedes");
+console.log(cars);*/
+//SPLICE(start, deletecount,item0.....itemN);
