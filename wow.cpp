@@ -4145,3 +4145,23 @@ int main(){
 
 
 
+#include<iostream>
+using namespace std;
+class avg{
+    int a,b,c;
+    public:
+    void get_num(){
+        cout<<"enter numbers: "<<endl;
+        cin>>a>>b>>c;
+    }
+    void avg_num(){
+        cout<<"avg is: "<<(a+b+c)/3<<endl;
+    }
+};
+int main(){
+    avg a;
+    a.get_num();
+    a.avg_num();
+
+    return 0;
+}
