@@ -384,3 +384,18 @@ console.log(cars);
 cars.splice(1, 0,"mercedes");
 console.log(cars);*/
 //SPLICE(start, deletecount,item0.....itemN);
+
+
+/*let cars=["audi", "bmw", "xuv", "maruti"];
+cars.sort();
+console.log(cars);
+
+let char =["a","b","1","9","3"];
+char.sort();
+console.log(char);
+
+let num=[1,3,5,2,4];
+num.sort();
+console.log(num);*/
+
+
