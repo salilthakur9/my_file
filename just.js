@@ -424,11 +424,25 @@ for(i=1;i<=a;i++){
 console.log(student);*/
 
 
-const post={
+/*const post={
     user_name: "salilthakur_9",
     no_of_posts: 10,
     n0_of_likes: 20
 };
 console.log(post);
 console.log(post["user_name"]);
-console.log(post.user_name);
+console.log(post.user_name);*/
+
+
+/*const obj={
+    1: "a",
+    2: "b",
+    true : "d",
+    null : "e",
+    undefined : "s"
+};
+console.log(obj);
+console.log(obj[1]);
+console.log(obj[2]);
+console.log(obj[null]);
+console.log(obj.1);*/ // it will not work cause dot object cant convert key into string.
