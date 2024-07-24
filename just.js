@@ -446,3 +446,20 @@ console.log(obj[1]);
 console.log(obj[2]);
 console.log(obj[null]);
 console.log(obj.1);*/ // it will not work cause dot object cant convert key into string.
+
+
+
+//how to add and update in js objects and literal:
+
+/*const student= {
+    name: "salil",
+    age: 19
+};
+
+console.log("before updating name: ", student.name);
+student.name="salil thakur";
+console.log("after updating name: ", student.name);
+student.gender="male";
+console.log("after adding gender key in the obj: ", student);
+delete student.gender;
+console.log(student);*/
