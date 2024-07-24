@@ -489,3 +489,30 @@ console.log(obj);
 obj.student1.gender="male";
 console.log(obj.student1);
 console.log(obj);*/
+
+
+
+/*const arr=[
+    {
+        name:"salil",
+        age:19,
+        city:"ch"
+    },
+    {
+        name:"thakur",
+        age:18,
+        city:"abc" 
+    },
+    {
+        name:"coc",
+        age:20,
+        city:"xyz" 
+    }
+]
+
+console.log(arr);
+console.log(arr[0]);
+arr[0].gender ="male";
+console.log(arr);
+arr[0].city="dasuya";
+console.log(arr[0]);*/
