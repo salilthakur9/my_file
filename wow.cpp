@@ -4145,7 +4145,7 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 class avg{
     int a,b,c;
@@ -4164,4 +4164,17 @@ int main(){
     a.avg_num();
 
     return 0;
+}*/
+
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    bool comp(pair<int, int> p1, pair<int,int> p2){
+        if(p1.second < p2.second) return true;
+        if(p1.second>p2.second) return false;
+        if(p1.first>p2.first) return true;
+        return false;
+    }
 }

@@ -399,3 +399,36 @@ num.sort();
 console.log(num);*/
 
 
+// for loops in js:
+/*let a=15;
+for(i=1;i<=a;i++){
+    if(i%2!=0)console.log(i);
+}*/
+
+
+//object literals: they are used to store keyed collections and complex entities.
+//creating objects(values) and its keys:
+//syntax:
+/*let object_name={
+    key1:value,
+    key2:value,
+    key3:value and soo on..
+};*/
+
+
+/*const student={
+    name: "salil",
+    sem: 3,
+    age:19
+};
+console.log(student);*/
+
+
+const post={
+    user_name: "salilthakur_9",
+    no_of_posts: 10,
+    n0_of_likes: 20
+};
+console.log(post);
+console.log(post["user_name"]);
+console.log(post.user_name);
