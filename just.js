@@ -463,3 +463,29 @@ student.gender="male";
 console.log("after adding gender key in the obj: ", student);
 delete student.gender;
 console.log(student);*/
+
+
+
+/*const obj={
+    student1:{
+        name:"salil",
+        age:19
+    },
+    student2:{
+        name:"aryan",
+        age:18
+    },
+    student3:{
+        name:"raman",
+        age:19
+    }
+};
+console.log(obj);
+console.log(obj.student1);
+console.log(obj.student2.age);
+console.log(obj.student3.name);
+delete obj.student3;
+console.log(obj);
+obj.student1.gender="male";
+console.log(obj.student1);
+console.log(obj);*/
