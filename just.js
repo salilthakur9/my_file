@@ -516,3 +516,35 @@ arr[0].gender ="male";
 console.log(arr);
 arr[0].city="dasuya";
 console.log(arr[0]);*/
+
+
+
+//MATHS OBJECT:
+//PROPERTIES: Math.PI , Math.E
+//METHODS: Math.abs(n) , Maths.pow(a,b) , Math.floor(n) , Math.ceil(n) , Math.random()
+/*Math;
+console.log(Math);
+
+Math.PI;
+console.log(Math.PI);
+
+Math.E
+console.log(Math.E);
+
+let a=Math.abs(-12.5);
+console.log(a);
+
+let b=Math.pow(5,2);
+console.log(b);
+
+let c=Math.floor(5.000001);
+console.log(c);
+//nearest integer floor value
+
+let d= Math.ceil(5.01);
+console.log(d);
+
+e=Math.random();
+console.log(e);*/
+
+
