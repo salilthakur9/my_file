@@ -551,11 +551,28 @@ console.log(e);*/
 // math.random() , it generates any number in the range of 0 to 1 but not 0 and nor 1.
 // therefore to hgenerate it in the range of : eg. 1 to 10 so we can write it as: [math.random()*10], for 1 to 10 ; [math.random()*5], for 1 to 5.
 
-let a= Math.random()*100;
+/*let a= Math.random()*100;
 console.log(a);
 //similarly:
 let b=Math.random()*1000;
 console.log(b);
 // to generate a random number in btw 0 to 10:
 let c= Math.floor(Math.random()*10)+1;
-console.log(c);
+console.log(c);*/
+
+
+//function:
+/*function hello(){
+    console.log("hi");
+}
+hello();*/
+
+
+// if we fill the vlaue of an argument 1 so it will print it but we cant do like fill the value of argument 2 and let it remain undefined argument 1 its false case.
+/*function pname(name,age){
+    console.log(`${name}'s age is ${age}`);
+}
+pname("salil thakur"); */
+
+
+

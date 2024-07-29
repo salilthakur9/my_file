@@ -4168,7 +4168,7 @@ int main(){
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 int main(){
     bool comp(pair<int, int> p1, pair<int,int> p2){
@@ -4177,4 +4177,74 @@ int main(){
         if(p1.first>p2.first) return true;
         return false;
     }
+}*/
+
+
+/*#include<iostream>
+using namespace std;
+class Counter {
+public:
+    static int count; // Static variable to count function calls
+
+    void increment() {
+        count++;
+    }
+
+    static void printCount() {
+        cout << "Total function calls: " << count << endl;
+    }
+};
+
+int Counter::count = 0; // Initialize static variable
+int main() {
+    Counter obj1, obj2;
+
+    obj1.increment();
+    obj1.increment();
+    obj2.increment();
+
+    Counter::printCount(); // Correctly prints 3
+    return 0;
+}*/
+
+
+#include <iostream>
+using namespace std;
+
+class xyz {
+private:
+    int x, y=0;
+    static int z;
+public:
+    void getdata(int a, int b) {
+        x = a;
+        y = y+a;
+        z = z + a;
+    }
+    static void display(void) {
+        cout << "The value of z is " << z << endl;
+    }
+    void display1(void){
+        cout<<"The value of y is"<<y<<endl;
+    }
+};
+
+int xyz::z = 0;
+
+int main() {
+    xyz aa, bb, cc, dd;
+    
+    aa.getdata(4, 5);
+    bb.getdata(7, 8);
+    cc.getdata(1, 2);
+    dd.getdata(2, 3);
+  
+    xyz::display();  // Display after setting data for all objects
+    aa.display1();
+    bb.display1();
+    
+    bb.getdata(8, 9);  // Setting data for bb again
+    xyz::display();    // Display the static variable z again
+
+    return 0;
 }

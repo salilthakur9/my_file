@@ -1,5 +1,5 @@
-Math.PI;
-console.log(Math.PI);
 
-math.e
-console.log(math.e);
+function pname(name){
+    console.log(name);
+}
+pname("salil thakur");
