@@ -4208,7 +4208,7 @@ int main() {
 }*/
 
 
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 
 class xyz {
@@ -4247,4 +4247,40 @@ int main() {
     xyz::display();    // Display the static variable z again
 
     return 0;
+}*/
+
+
+
+#include<iostream>
+using namespace std;
+class Box1{
+    int l=10,w=20,h=10;
+    friend void calculate();
+};
+class Box2{
+    int l=11,w=20,h=10;
+    friend void calculate();
+};
+class Box3{
+    int l=10,w=21,h=10;
+    friend void calculate();
+};
+class Box4{
+    int l=10,w=20,h=11;
+    friend void calculate();
+};
+void calculate(){
+    int result=l*b*h;
+}
+int main(){
+    Box1 a;
+    Box2 b;
+    Box3 c;
+    Box4 d;
+    a.calculate();
+    b.calculate();
+    c.calculate();
+    d.calculate();
+
+    return 0
 }
