@@ -576,3 +576,20 @@ pname("salil thakur"); */
 
 
 
+/*function func(n){
+    for(i=n;i<=n*10;i+=n){
+        console.log(i);
+    }
+}
+func(20);*/
+
+
+
+/*function func(n){
+    let sum=0;
+    for(let i=1;i<=n;i++){
+        sum+=i;
+    }
+    return sum;
+}
+console.log(func(4));*/
