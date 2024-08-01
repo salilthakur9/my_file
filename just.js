@@ -593,3 +593,15 @@ func(20);*/
     return sum;
 }
 console.log(func(4));*/
+
+
+//concatination of a string.
+/*let str=["salil ","thakur"];
+function func(str){
+    let result="";
+    for(let i=0;i<str.length;i++){
+        result += str[i];
+    }
+    return result;
+}
+console.log(func(str));*/
