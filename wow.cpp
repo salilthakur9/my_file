@@ -4251,36 +4251,60 @@ int main() {
 
 
 
-#include<iostream>
+/*#include <iostream>
 using namespace std;
-class Box1{
-    int l=10,w=20,h=10;
-    friend void calculate();
+class Rectangle{
+    float width;
+    float height;
+public:
+    Rectangle(float w, float h) : width(w), height(h) {}
+    friend class Inspector;
 };
-class Box2{
-    int l=11,w=20,h=10;
-    friend void calculate();
+class Inspector{
+public:
+    void compareArea(const Rectangle& r1, const Rectangle& r2) {
+        float area1 = r1.width * r1.height;
+        float area2 = r2.width * r2.height;
+        if (area1 > area2) {
+            cout << "The first rectangle is large" << endl;
+        } else if (area1<area2) {
+            cout << "The second rectangle is large" << endl;
+        } else {
+            cout << "Both rectangles have the same area." << endl;
+        }
+    }
 };
-class Box3{
-    int l=10,w=21,h=10;
-    friend void calculate();
-};
-class Box4{
-    int l=10,w=20,h=11;
-    friend void calculate();
-};
-void calculate(){
-    int result=l*b*h;
-}
-int main(){
-    Box1 a;
-    Box2 b;
-    Box3 c;
-    Box4 d;
-    a.calculate();
-    b.calculate();
-    c.calculate();
-    d.calculate();
+int main() {
+    Rectangle r1(10.6, 5);
+    Rectangle r2(7, 8.3);
+    Inspector inspector;
+    inspector.compareArea(r1, r2);
+    return 0;
+}*/
 
-    return 0
-}
+
+
+/*#include <iostream>
+using namespace std;
+class Counter {
+private:
+    static int count;  
+public:
+    static void incrementCount() {
+        count++;
+    }
+    static int getCount() {
+        return count;
+    }
+};
+int Counter::count = 0;
+int main() {
+    cout<<Counter::getCount()<<endl;
+    Counter::incrementCount();
+    cout<<Counter::getCount() << endl;
+    Counter::incrementCount();
+    Counter::incrementCount();
+    cout<<Counter::getCount() << endl;
+
+    return 0;
+}*/
