@@ -4308,3 +4308,74 @@ int main() {
 
     return 0;
 }*/
+
+
+// 1.
+/*#include<iostream>
+using namespace std;
+class DataManager{
+    static int datavalue;
+    public:
+    static void setData(int value){
+        datavalue=value;
+    }
+    static int getData(){
+        return datavalue;
+    }
+};
+int DataManager :: datavalue=0;
+
+int main(){
+    DataManager :: setData(49);
+    cout<<DataManager::getData()<<endl;
+    return 0;
+}*/
+
+
+// 2.
+/*#include <iostream>
+using namespace std;
+class StringUtils {
+public:
+    static string rev_String(string& str) {
+        string reversedStr = str;
+        int n = reversedStr.length();
+        for (int i = 0; i < n / 2; ++i) {
+            swap(reversedStr[i], reversedStr[n - i - 1]);
+        }return reversedStr;
+    }
+};
+int main() {
+    string original = "Salil Thakur";
+    string reversed = StringUtils::rev_String(original);
+    cout << "Original string: " << original << endl;
+    cout << "Reversed string: " << reversed << endl;
+
+    return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+class String{
+    public:
+    static string reverse_string(string& str){
+        string reversed_string = str;
+        int n = reversed_string.length();
+        for(int i=0;i<n/2;i++){
+            swap(reversed_string[i], reversed_string[n-i-1]);
+        }
+        return reversed_string;
+    }
+};
+
+int main(){
+    string before_rev_string = "madaam";
+    string after_rev_string = String :: reverse_string(before_rev_string);
+    
+    if(before_rev_string == after_rev_string)cout<<"palindrome";
+    else cout<<"not palindrome";
+
+    return 0;
+}*/
