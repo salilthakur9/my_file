@@ -605,3 +605,75 @@ function func(str){
     return result;
 }
 console.log(func(str));*/
+
+
+
+/*let str=["salil"," thakur"];
+function func(str){
+    let result="";
+    for(i =0;i<str.length;i++){
+        result +=str[i];
+    }return result;
+}
+console.log(func(str));*/
+
+
+
+//variablles that are declared in the function is not variable outside the scope of function.
+
+//print the number of positive ages in an array:
+/*const ages=[11,12,13,14,15,16];
+for(let i=0;i<ages.length;i++){
+    if(ages[i]%2==0){
+        console.log(ages[i]);
+    }
+}*/
+
+
+/*const person1 ="salil";
+const gender1= "male";
+
+const person2="raman";
+const gender2="male";*/
+
+/*const personArray = ["salil", "thakur","sakshi"];
+const genderArray = ["male", "male","female"];
+
+for(let i=0;i<personArray.length;i++){
+    if(genderArray[i]=="female"){
+        console.log(personArray[i]);
+    }
+}*/
+//the given code above can also be written as:
+/*const personArray = ["salil","thakur","sakshi"];
+const genderArray = ["male","male","female"];
+
+const total_number_of_arraymembers = personArray.length;
+
+for(let i=0;i<total_number_of_arraymembers;i++){
+    if(genderArray[i]=="male"){
+        console.log(personArray[i]);
+    }
+}*/
+
+
+
+/*const array1=[{
+    first_name: "salil",
+    gender:"male"
+},
+{
+    first_name:"thakur",
+    gender: "male"
+}
+]
+const l=array1.length;
+
+for(let i=0;i<l;i++){
+    if(array1[i]["gender"]=="male"){
+        console.log(array1[i]["first_name"]);
+    }
+}*/
+
+
+

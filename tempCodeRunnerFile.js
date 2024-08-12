@@ -1,5 +1,1 @@
-
-function pname(name){
-    console.log(name);
-}
-pname("salil thakur");
+console.log(func(str));

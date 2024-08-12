@@ -4379,3 +4379,113 @@ int main(){
 
     return 0;
 }*/
+
+
+
+/*#include<iostream>
+using namespace std;
+class demo{
+    int n;
+    public:
+    demo(){
+        n=100;
+        cout<<n<<endl;
+    }
+    ~demo(){
+        cout<<"destroyed object: ";
+        cout<<n<<endl;
+    }
+};
+int main(){
+    demo o1,o2,o3;
+    return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+class Book{
+    string title;
+    string author;
+    int publicationYear;
+    public:
+    Book(string t,string a,int year): title(t), author(a), publicationYear(year){
+        cout<<"Book added: "<<title<<" by "<<author<<" in year "<<publicationYear<<endl;
+    }
+    ~Book(){
+        cout<<"Book removed: "<<title<<endl;
+    }
+};
+int main(){
+    Book obj1("eng maths", "aryan", 2005);
+    Book obj2("hindi", "jk.sharma", 1998);
+    Book obj3("sci", "raman", 2012);
+    return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+class Movie{
+    string name, director; int year;
+    public:
+    Movie(string n,string d, int y): name(n), director(d), year(y){
+        cout<<"the Movie "<<name<<" directed by "<<director<<" is released in year "<<year<<endl;
+    }
+    ~Movie(){
+        cout<<"Movie banned this year: "<<name<<endl;
+    }
+};
+int main(){
+    Movie obj1("movie1", "abc", 2000);
+    Movie obj2("movie2", "xyz", 2010);
+    Movie obj3("movie3", "pqr", 2020);
+
+    return 0;
+}*/
+
+
+
+#include<iostream>
+#include<string>
+using namespace std;
+class Movie{
+    string name, director; int year; string* actors; int actorCount;
+    public:
+    Movie(string n,string d,int y,string* a,int count):name(n), director(d),year(y),actorCount(count){
+        actors  =new string[actorCount];
+        for(int i=0;i<actorCount;i++){
+            actors[i]=a[i];
+        }
+        cout<<"The movie "<<name<<" is directed by "<<director<<" in the year "<<year<<endl;
+    }
+    void Display(){
+        cout<<"Movie details: "<<endl;
+        cout<<"Movie name: "<<name<<endl;
+        cout<<"Movie director: "<<director<<endl;
+        cout<<"Actors name: ";
+        for(int i=0;i<actorCount;i++){
+            cout<<actors[i];
+            if(i<actorCount-1)cout<<", ";
+        }
+        cout<<endl;
+    }
+    ~Movie(){
+        cout<<"Movie banned this year: "<<name<<endl;
+        delete[]actors;
+    }
+};
+
+int main(){
+    string actors1[]={"actor1","actor2","actor3"};
+    string actors2[]={"actor4","actor5","actor6"};
+    string actors3[]={"actor7","actor8","actor9"};
+
+    Movie obj1("movie1","abc",2000,actors1,3);obj1.Display();
+    Movie obj2("movie1","abc",2000,actors2,3);obj2.Display();
+    Movie obj3("movie1","abc",2000,actors3,3);obj3.Display();
+
+    return 0;
+}
