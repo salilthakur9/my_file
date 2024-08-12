@@ -698,3 +698,14 @@ console.log(typeof und);
 console.log(typeof nul);
 console.log(typeof sym);
 console.log(typeof bigint);*/
+
+let a = -128;           
+let b = 128;           
+let result1 = a >> 2;  
+let result2 = b >> 2;  
+let result3 = a >>> 2;  
+let result4 = b >>> 2;  
+console.log(result1);
+console.log(result2);
+console.log(result3);
+console.log(result4);

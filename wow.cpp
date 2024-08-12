@@ -4489,3 +4489,25 @@ int main(){
 
     return 0;
 }*/
+
+
+
+/*#include <iostream>
+using namespace std;
+class Vector3D {
+    double x, y, z;
+public:
+    Vector3D(double xV1, double yV2, double zV3) : x(xV1), y(yV2), z(zV3){}
+    Vector3D(Vector3D &v) : x(v.x), y(v.y), z(v.z){}
+    void print(){
+        cout <<x<<", "<<y<<", "<<z<< endl;
+    }
+};
+int main() {
+    Vector3D vec1(1.0, 2.0, 3.0);
+    vec1.print();
+    Vector3D vec2(vec1);
+    vec2.print();
+
+    return 0;
+}*/
