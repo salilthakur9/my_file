@@ -677,3 +677,24 @@ for(let i=0;i<l;i++){
 
 
 
+/*let num = 42;
+let str = "Hello, World!";
+let bool = true;
+let obj = { name: "Alice" };
+let arr = [1, 2, 3];
+let func = function() {};
+let und;
+let nul = null;
+let sym = Symbol("symbol");
+let bigint = 9007199254740991n;
+
+console.log(typeof num);
+console.log(typeof str);
+console.log(typeof bool);
+console.log(typeof obj);
+console.log(typeof arr);
+console.log(typeof func);
+console.log(typeof und);
+console.log(typeof nul);
+console.log(typeof sym);
+console.log(typeof bigint);*/
