@@ -729,3 +729,8 @@ dog.speak();
 cat.speak();*/
 
 
+/*const currentDate = new Date();
+console.log(currentDate.getDate());
+console.log(currentDate.getDay());
+console.log(currentDate.getMonth());
+console.log(currentDate.getFullYear());*/
