@@ -699,7 +699,7 @@ console.log(typeof nul);
 console.log(typeof sym);
 console.log(typeof bigint);*/
 
-let a = -128;           
+/*let a = -128;           
 let b = 128;           
 let result1 = a >> 2;  
 let result2 = b >> 2;  
@@ -708,4 +708,24 @@ let result4 = b >>> 2;
 console.log(result1);
 console.log(result2);
 console.log(result3);
-console.log(result4);
+console.log(result4);*/
+
+
+
+/*class Animal {
+    constructor(name, legscount, speaks){
+        this.name=name;
+        this.legscount=legscount;
+        this.speaks=speaks;
+    }
+    speak(){
+        console.log(this.name +" said "+ this.speaks);
+    }
+}
+let dog= new Animal ("dog", 4,"bhow bhow");
+let cat= new Animal ("cat", 3,"meow meow");
+
+dog.speak();
+cat.speak();*/
+
+
