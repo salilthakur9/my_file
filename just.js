@@ -733,4 +733,46 @@ cat.speak();*/
 console.log(currentDate.getDate());
 console.log(currentDate.getDay());
 console.log(currentDate.getMonth());
-console.log(currentDate.getFullYear());*/
+console.log(currentDate.getFullYear());
+console.log(currentDate);
+console.log(currentDate.getTime());*/
+
+
+
+/*function calculate(){
+    let a =0;
+    for(i=0;i<1000000000;i++){
+        a=a+1;
+    }
+    return a;
+}
+
+const beforeDate= new Date();
+const beforeTimeInMS= beforeDate.getTime();
+calculate();
+const afterDate= new Date();
+const afterTimeInMS= afterDate.getTime();
+
+console.log((afterTimeInMS-beforeTimeInMS)/1000);*/
+
+
+
+/*function calc(n){
+    let a=0;
+    for(i=0;i<n;i++){
+        a=a+i;
+    }
+    return a;
+}
+const before = new Date();
+const before_time = before.getTime();
+
+calc(100000000);
+
+const after = new Date();
+const after_time = after.getTime();
+
+console.log((after_time - before_time)/1000);*/
+
+
+
