@@ -776,3 +776,21 @@ console.log((after_time - before_time)/1000);*/
 
 
 
+// JSON = javascript object notation
+
+/*function square(N){
+    return N*N;
+}
+
+function sumof_squares(a,b){
+    const val1 = square(a);
+    const val2 = square(b);
+    return val1+val2;
+}
+const ans0 = square(2);
+console.log(ans0);
+const ans = sumof_squares(1, 2);
+console.log(ans);*/
+
+
+
