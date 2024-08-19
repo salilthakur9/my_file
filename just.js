@@ -794,3 +794,23 @@ console.log(ans);*/
 
 
 
+/*const fs = require('fs');
+
+fs.promises.readFile('example.text', 'utf-8')
+  .then(data => {
+    console.log(data);
+  })
+  .catch(err => {
+    console.error(err);
+  });
+
+console.log('salil');
+
+let a = 0;
+for (let i = 0; i < 100000000000; i++) {
+  a++;
+}
+
+console.log('salil thakur');*/
+
+
