@@ -4511,3 +4511,25 @@ int main() {
 
     return 0;
 }*/
+
+
+
+#include<iostream>
+using namespace std;
+class Student{
+    private:
+    string name;int age;float grade;
+    public:
+    Student(string n,int a,float g): name(n), age(a), grade(g){}
+    Student(const Student &s): name(s.name), age(s.age), grade(s.grade){}
+
+    void display(void){
+        cout<<name<<endl<<age<<endl<<grade<<endl;
+        }
+};
+int main(){
+    Student obj("salil", 19, 8.5);
+    obj.display();
+    return 0;
+    
+}
