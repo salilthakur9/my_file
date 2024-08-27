@@ -4514,7 +4514,7 @@ int main() {
 
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 class Student{
     private:
@@ -4532,4 +4532,131 @@ int main(){
     obj.display();
     return 0;
     
+}*/
+
+
+
+/*#include <iostream>
+#include <string>
+using namespace std;
+
+class Student {
+    string name;int age;float grade;
+public:
+    Student(string n, int a, float g) : name(n), age(a), grade(g) {}
+    Student(Student &s) : name(s.name), age(s.age), grade(s.grade) {}
+    
+    void display()  {
+        cout << "Name: " << name << endl;
+        cout << "Age: " << age << endl;
+        cout << "Grade: " << grade << endl;
+    }
+};
+int main(){
+    Student orig("Salil Thakur", 19, 9.99);
+    Student copy = orig;
+
+    cout << "Original: " << endl;
+    orig.display();
+
+    cout << "Copied:" << endl;
+    copy.display();
+
+    return 0;
+}*/
+
+
+
+// // Your task is to create a class that contains an integer pointer data member. Create a single object named “one” in the
+// // main and assign values to the data member of the object. Then create another object named “two” that is a copy of the 
+// // “one”. Create a shallow copy constructor and then demonstrate that both objects share a common memory i.e.
+// // modifying one object in fact modifies the other. Create a display function that will show the values of the object.
+/*#include <iostream>
+using namespace std;
+class Shallow{
+    private:
+        int *p;
+    public:
+        Shallow(int value){
+            p = new int; 
+            *p = value;
+        }
+        Shallow(Shallow &o){
+            p = o.p; 
+        }
+        void display(){
+            cout<<*p;
+        }
+        void change(int p1){
+            *p = p1;
+        }
+};
+
+int main(){
+    Shallow one(25);
+    Shallow two = one; 
+    cout<<"Before Modifying"<<endl;
+    cout<<"The value of integer pointer variable for object 'one' is : ";
+    one.display();
+    cout<<endl;
+    cout<<"The value of integer pointer variable for object 'two' is : ";
+    two.display();
+    cout<<endl;
+
+    one.change(50);
+    cout<<"After Modifying"<<endl;
+    cout<<"The value of integer pointer variable for object 'one' is : ";
+    one.display();
+    cout<<endl;
+    cout<<"The value of integer pointer variable for object 'two' is : ";
+    two.display();
+    cout<<endl;
+    
+    return 0;
+}*/
+
+
+
+#include <iostream>
+#include <string>
+using namespace std;
+class Diablo {
+private:
+    string color, engineNumber, frameNumber;
+    int cubicCapacity, numberOfSeats, yearOfManufacture;
+    string* ownerName;  
+public:
+    Diablo(string c,int cc,int seats,int year,string engine,string frame,string owner)
+        : color(c),cubicCapacity(cc),numberOfSeats(seats),yearOfManufacture(year),engineNumber(engine),frameNumber(frame) {
+        ownerName = new string(owner);
+    }
+    Diablo(Diablo &o):color(o.color),cubicCapacity(o.cubicCapacity),numberOfSeats(o.numberOfSeats) {
+        ownerName = nullptr;
+        }
+
+    void setRemainingAttributes(int year, string engine, string frame, string owner) {
+        yearOfManufacture = year;
+        engineNumber = engine;
+        frameNumber = frame;
+        if (ownerName) {
+            delete ownerName;  
+        }ownerName = new string(owner); 
+    }
+    void display() const {
+        cout << "Color: " << color <<endl<< "Cubic Capacity: " << cubicCapacity <<endl<< "Number of Seats: " << numberOfSeats <<endl<< "Year of Manufacture: " << yearOfManufacture <<endl<< "Engine Number: " << engineNumber <<endl<< "Frame Number: " << frameNumber <<endl<< "Owner Name: " << *ownerName << "\n";
+    }
+};
+
+int main() {
+    Diablo initialDiablo("Royle Black", 5500, 2, 2024, "X123X123", "X123X456", "Dr. Doom");
+    Diablo secondaryDiablo = initialDiablo;
+    secondaryDiablo.setRemainingAttributes(2023, "XX12345", "X1X12X3", "Tony Stark");
+
+    cout << "Details of first lambo:"<<endl;
+    initialDiablo.display();
+
+    cout << endl<<"Details of second lambo:"<<endl;
+    secondaryDiablo.display();
+
+    return 0;
 }
