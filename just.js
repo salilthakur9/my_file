@@ -814,3 +814,27 @@ for (let i = 0; i < 100000000000; i++) {
 console.log('salil thakur');*/
 
 
+//syncronous function
+/*function find(n){
+    let ans =0;
+    for(let i=0;i<n;i++){
+        ans+=i;
+    }
+    return ans;
+}
+console.log(find(1000))*/
+
+
+
+//Asyncronous function
+function find(n){
+    let ans =0;
+    for(let i=0;i<n;i++){
+        ans+=i;
+    } return ans;
+}
+function findtill100(){
+    console.log(find(100));
+}
+setTimeout(findtill100, 2000)
+console.log("salil");
