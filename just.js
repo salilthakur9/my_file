@@ -827,7 +827,7 @@ console.log(find(1000))*/
 
 
 //Asyncronous function
-function find(n){
+/*function find(n){
     let ans =0;
     for(let i=0;i<n;i++){
         ans+=i;
@@ -837,4 +837,31 @@ function findtill100(){
     console.log(find(100));
 }
 setTimeout(findtill100, 2000)
+console.log("salil");*/
+
+
+
+/*function sum(n){
+    let ans=0;
+    for(let i =0;i<n;i++){
+        ans+=i;
+    }return ans;
+}
+function till5(){
+    console.log(sum(5));
+}
+function till10(){
+    console.log(sum(10));
+}
+
+setTimeout(till5, 2000);
 console.log("salil");
+setTimeout(till10, 1000);
+console.log("Thakur");*/
+
+
+
+const fs = require("fs")  //fs (file system) = is the node js librery which helps or allow us to to checkout and read the files or write for the file.
+fs.readFile("a.txt","utf-8", function(err, data){
+    console.log(data);
+})
