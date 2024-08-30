@@ -4617,7 +4617,7 @@ int main(){
 
 
 
-#include <iostream>
+/*#include <iostream>
 #include <string>
 using namespace std;
 class Diablo {
@@ -4659,4 +4659,50 @@ int main() {
     secondaryDiablo.display();
 
     return 0;
-}
+}*/
+
+
+
+/*#include<iostream>
+#include<string>
+using namespace std;
+class Diablo{
+    string color, engine_number, frame_number;
+    int cubic_capacity, number_of_seats, year_of_manufactures;
+    string *owner_name;
+    public:
+    Diablo(string c,int cc, int seats, int year, string engine, string frame, string owner)
+    : color(c), cubic_capacity(cc), number_of_seats(seats), year_of_manufactures(year), engine_number(engine), frame_number(frame){
+        owner_name= new string(owner);
+    }
+    Diablo( Diablo &o): color(o.color), cubic_capacity(o.cubic_capacity), number_of_seats(o.number_of_seats){
+        owner_name= nullptr;
+    }
+
+    void set_remaining_attributes(int year, string engine,string frame, string owner){
+        year_of_manufactures = year;
+        engine_number = engine;
+        frame_number= frame;
+        if(owner_name){
+            delete owner_name;
+        }owner_name = new string (owner);
+    }
+    
+    void Display() const{
+        cout<<"color: "<<color<<endl<<"cubic capacity: "<<cubic_capacity<<endl<<"number of seats: "<<number_of_seats<<endl<<"year of manufacture: "<<year_of_manufactures<<"engine number: "<<engine_number<<"frame number: "<<frame_number<<"owner name: "<<owner_name<<endl;
+        }
+};
+
+int main(){
+    Diablo initialDiablo("blue", 4900, 2, 2005, "abcd", "xyzz", "Salil Thakur");
+    Diablo secondaryDiablo=initialDiablo;
+    secondaryDiablo.set_remaining_attributes(2023, "efgh", "pqrs", "Tony Stark");
+
+    cout<<"Details of first lambo: "<<endl;
+    initialDiablo.Display();
+
+    cout<<"details of second Diablo: "<<endl;
+    initialDiablo.Display();
+
+    return 0;
+}*/
