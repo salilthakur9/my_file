@@ -861,7 +861,11 @@ console.log("Thakur");*/
 
 
 
-const fs = require("fs")  //fs (file system) = is the node js librery which helps or allow us to to checkout and read the files or write for the file.
+/*const fs = require("fs")  //fs (file system) = is the node js librery which helps or allow us to to checkout and read the files or write for the file.
 fs.readFile("a.txt","utf-8", function(err, data){
     console.log(data);
 })
+console.log("hello");*/
+
+
+
