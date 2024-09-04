@@ -869,7 +869,7 @@ console.log("hello");*/
 
 
 
-const fs = require("fs")
+/*const fs = require("fs")
 fs.readFile("a.txt", "utf-8", function(err, data){
     console.log(data);
 })
@@ -878,4 +878,25 @@ let a=0;
 for(let i =0;i<1000000000;i++){
     a++;
 }
-console.log("hello buddy");
+console.log("hello buddy");*/
+
+
+
+const fs = require('fs');
+
+function KiratsReadFile(){
+    console.log("inside of kriat read file: ");
+    return new Promise(function(resolve){
+        console.log("inside promise");
+        fs.readFile("a.txt", "utf-8", function(err, data){
+            console.log("before resolve");
+            resolve(data);
+        });
+    });
+}
+function onDone(data){
+    console.log(data);
+}
+
+var a= KiratsReadFile();
+a.then(onDone);
