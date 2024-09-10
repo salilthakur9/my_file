@@ -4765,23 +4765,23 @@ int main() {
 the [] operator for accessing matrix element and what are the effects of
 modifing the matrix element using this operators */
 
-#include <iostream>
+/*#include <iostream>
 #include <stdexcept>
 using namespace std;
 
 class Matrix {
 public:
     Matrix(int rows, int cols) : rows_(rows), cols_(cols) {
-        data_ = new int[rows * cols];
+        data = new int[rows * cols];
     }
 
     ~Matrix() {
-        delete[] data_;
+        delete[] data;
     }
 
     int* operator[](int row) {
         if (row >= rows_ || row < 0) throw out_of_range("Row index out of range");
-        return &data_[row * cols_];
+        return &data[row * cols_];
     }
 
     const int* operator[](int row) const {
@@ -4801,5 +4801,5 @@ public:
 private:
     int rows_, cols_;
     int* data;
-};
+};*/
 
