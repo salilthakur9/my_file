@@ -917,3 +917,13 @@ input_array.forEach(num=>{
 
 console.log("even array: ["+even_array+"]");
 console.log("odd array: ["+odd_array+"]");*/
+
+
+
+/*let arr =[11,12,13,14,15];
+let sum=0;
+arr.forEach(calculate);
+console.log("sum: "+sum);
+function calculate(item){
+    sum=sum+item;
+}*/
