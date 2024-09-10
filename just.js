@@ -903,7 +903,7 @@ a.then(onDone);*/
 
 
 
-let input_array = [1,2,3,4,5,6,7,8,9,10];
+/*let input_array = [1,2,3,4,5,6,7,8,9,10];
 let even_array = [];
 let odd_array = [];
 
@@ -916,4 +916,4 @@ input_array.forEach(num=>{
 })
 
 console.log("even array: ["+even_array+"]");
-console.log("odd array: ["+odd_array+"]");
+console.log("odd array: ["+odd_array+"]");*/
