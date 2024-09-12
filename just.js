@@ -927,3 +927,15 @@ console.log("sum: "+sum);
 function calculate(item){
     sum=sum+item;
 }*/
+
+
+
+/*let num = [10, 15, 20, 25];  
+let result = num.every(myfunction); 
+function myfunction(item) {
+    return item > 5;  
+}
+console.log(result);  */
+
+
+
