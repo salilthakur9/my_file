@@ -4835,3 +4835,32 @@ int main() {
 
 
 
+#include <iostream>
+using namespace std;
+class Distance {
+private:
+    float m;
+    float km;
+    float i;
+    float mile;
+public:
+    Distance(float meters) : m(meters) {
+        km = meters / 1000.0;
+        i = meters * 40.0;
+        mile = meters / 1600.0;
+    }
+    void display(){
+        cout<<"Kilometers: "<< km<< endl;
+        cout<<"Inches: "<<i <<endl;
+        cout<<"Miles: "<<mile <<endl;
+    }
+};
+int main() {
+    float meters_input;
+    cout << "Enter distance in meters: ";
+    cin >> meters_input;
+    Distance dist(meters_input);
+
+    dist.display();
+    return 0;
+}
