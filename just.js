@@ -939,3 +939,16 @@ console.log(result);  */
 
 
 
+/*let string = "THAKUR";
+let arr = Array.from(string);
+console.log(arr);*/
+
+
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+function print(arr) {
+    for (let i = 0; i < arr.length; i += 3) {
+        console.log(arr.slice(i, i + 3)+" ");
+    }
+}
+print(arr);

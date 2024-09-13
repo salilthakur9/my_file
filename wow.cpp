@@ -4803,3 +4803,35 @@ private:
     int* data;
 };*/
 
+
+// Basic Type: Temperature in Fahrenheit (represented as an int or float).
+// Class Type: A Temperature class that encapsulates temperature values in both Fahrenheit and Celsius.
+
+
+/*#include <iostream>
+using namespace std;
+class Temperature {
+private:
+    float fahrenheit;
+    float celsius;
+public:
+    Temperature(float fahrenheit) : fahrenheit(fahrenheit) {
+        celsius = (fahrenheit - 32) * 5.0 / 9.0;
+    }
+    void display() const {
+        cout << "Fahrenheit: " << fahrenheit << endl;
+        cout << "Celsius: " << celsius << endl;
+    }
+};
+int main() {
+    float fahrenheitTemp;
+
+    cout << "Enter temperature in Fahrenheit: ";
+    cin >> fahrenheitTemp;
+    Temperature temp(fahrenheitTemp);
+    temp.display();
+    return 0;
+}*/
+
+
+
