@@ -4867,7 +4867,7 @@ int main() {
 
 
 
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 int main() {
     int a = 123;
@@ -4875,13 +4875,38 @@ int main() {
     int **q=&p;
     
     cout<<a<<endl; // value of a
-    cout<<&a<<endl;  // address of a
-    cout<<p<<endl;  // address of a
+    cout<<&a<<endl; // address of a
+    cout<<p<<endl; // address of a
     cout<<*p<<endl; // value of a
     cout<<&p<<endl; // address of p
-    cout<<q<<endl;  // address of p
+    cout<<q<<endl; // address of p
     cout<<*q<<endl; // address of a
     cout<<**q<<endl; // value of a
-    
+    cout<<&q<<endl; // address of q
     return 0;
-}
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+main(){
+    int arr[]={1,2,3,4,5};
+    cout<<arr<<endl;
+
+    //arr++;
+
+    int *ptr;
+    ptr=arr;
+    cout<<ptr<<endl;
+    ptr++;
+    cout<<ptr<<endl;
+    cout<<*ptr<<endl;
+    cout<<ptr+2<<endl;
+    cout<<*(ptr+9)<<endl;
+
+    return 0;
+}*/
+
+
+
