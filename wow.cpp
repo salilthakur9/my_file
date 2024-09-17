@@ -5120,3 +5120,42 @@ has access to the eat function from Animal as well as its own bark function.*/
 
 
 // Polymorphism
+/*#include<iostream>
+using namespace std;
+class Animal{
+    public:
+    virtual void sound(){
+        cout<<"Animals makes sounds"<<endl;
+    }
+};
+
+class Dog : public Animal {
+public:
+    void sound() override {
+        cout << "Dog barks." << endl;
+    }
+};
+class Cat : public Animal{
+    public:
+    void sound() override{
+        cout<<"cat meows"<<endl;
+    }
+};
+
+int main(){
+    Animal* a1= new Dog();
+    Animal* a2= new Cat();
+
+    a1->sound();
+    a2->sound();
+
+    delete a1;
+    delete a2;
+
+    return 0;
+}*/
+
+/*Here, the sound method behaves differently based on whether it's called 
+on a Dog or Cat object. The base class Animal has a virtual method, allowing 
+run-time polymorphism. When we call sound on a base class pointer, the 
+derived class's method is invoked.*/
