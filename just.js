@@ -955,7 +955,7 @@ print(arr);*/
 
 
 
-var d=new Promise(function(resolve){
+/*var d=new Promise(function(resolve){
     setTimeout(function(){
         resolve('foo');
     }, 1000)
@@ -965,4 +965,16 @@ function callback(){
     console.log(d);
 }
 console.log(d);
-d.then(callback);
+d.then(callback);*/
+
+
+
+let str = 'JavaScript';
+
+let upperCase = str.toUpperCase();
+
+let lowerCase = str.toLowerCase();
+
+console.log(upperCase);
+
+console.log(lowerCase);

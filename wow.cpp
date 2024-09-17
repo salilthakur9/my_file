@@ -4910,3 +4910,83 @@ main(){
 
 
 
+//------------------------------------------------------------
+// data hiding:
+//private and public variable:
+
+/*#include<iostream>
+using namespace std;
+class Account{
+    private:
+    double balance;
+    public:
+    Account(double initial_balance){
+        balance=initial_balance;
+    }
+
+    void deposit(double amount){
+        balance+=amount;
+    }
+
+    void withdraw(double amount){
+        if(amount<=balance){
+            balance-=amount;
+        }else{
+            cout<<"insufficient balance"<<endl;
+        }
+    }
+    void showBalance(){
+        cout<<"balance : "<<balance<<endl;
+    }
+};
+
+int main(){
+    Account my_account(1000);
+    my_account.deposit(500);
+    my_account.showBalance();
+    my_account.withdraw(1500);
+    my_account.showBalance();
+
+    return 0;
+}*/
+
+/*The balance is a private variable, so it can't be accessed or modified 
+directly outside the class. We use methods (deposit, withdraw, and showBalance)
+to interact with it.*/
+
+
+
+
+//Abstraction
+//it shows only the necessary details while keeping complex implementation details hidden.
+
+/*#include<iostream>
+using namespace std;
+class Car{
+    public:
+    void start(){
+        ignition();
+        engineStart();
+        cout<<"Car is Starting..."<<endl;
+    }
+    private:
+    void ignition(){
+        cout<<"Ignition ON"<<endl;
+    }
+
+    void engineStart(){
+        cout<<"Engine Start"<<endl;
+    }
+
+};
+int main(){
+    Car my_car;
+    my_car.start();
+
+    return 0;
+}*/
+
+/*Here, the start function abstracts the internal details of how the car 
+is started (ignition and engineStart), which are private and hidden from 
+the outside. The user just needs to know how to call start without 
+worrying about how the ignition works internally.*/
