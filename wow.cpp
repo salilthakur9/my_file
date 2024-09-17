@@ -4908,6 +4908,46 @@ main(){
     return 0;
 }*/
 
+// create aa program with a function pointer heading user commands such as start stop and change
+
+/*#include<iostream>
+using namespace std;
+class Device {
+public:
+    void start() {
+        cout << "Device started." << endl;
+    }
+
+    void stop() {
+        cout << "Device stopped." << endl;
+    }
+
+    void change() {
+        cout << "Device settings changed." << endl;
+    }
+};
+int main(){
+    Device myDevice;
+    int choice;
+    cin>>choice;
+    switch (choice) {
+            case 1:
+                myDevice.start();
+                break;
+            case 2:
+                myDevice.stop();
+                break;
+            case 3:
+                myDevice.change();
+                break;
+            default:
+                cout << "Invalid choice! Please try again." << endl;
+                break;
+        }
+    return 0;
+}*/
+
+
 
 
 //------------------------------------------------------------
@@ -5041,3 +5081,42 @@ int main(){
 /*In the class Student, data members (name and age) are encapsulated within
 the class, and their access is controlled using getter and setter methods. 
 Direct access to the members is restricted.*/
+
+
+
+
+//Inheritance:
+/*Inheritance allows one class to inherit the properties and methods of 
+another class. This helps in code reuse and creating a relationship 
+between classes.*/
+
+/*#include<iostream>
+using namespace std;
+class Animal{
+    public:
+    void eat(){
+        cout<<"base class"<<endl;
+    }
+};
+
+class dog : public Animal{
+    public:
+    void bark(){
+        cout<<"derived class"<<endl;
+    }
+};
+
+int main(){
+    dog d;
+    d.eat();
+    d.bark();
+
+    return 0;
+}*/
+
+/*The class Dog inherits from the class Animal. This means the Dog class 
+has access to the eat function from Animal as well as its own bark function.*/
+
+
+
+// Polymorphism
