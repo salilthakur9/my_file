@@ -4990,3 +4990,54 @@ int main(){
 is started (ignition and engineStart), which are private and hidden from 
 the outside. The user just needs to know how to call start without 
 worrying about how the ignition works internally.*/
+
+
+
+// Encapsulation
+/*Encapsulation is the process of bundling data (variables) and methods 
+(functions) that operate on the data into a single unit, i.e., a class. 
+It also involves restricting direct access to some components.*/
+
+/*#include<iostream>
+using namespace std;
+class Student{
+    string name;
+    int age;
+
+    public:
+    Student(string student_name, int student_age){
+        name=student_name;
+        age= student_age;
+    }
+
+    string get_name(){
+        return name;
+    }
+
+    int get_age(){
+        return age;
+    }
+
+    void set_name(string new_name){
+        name=new_name;
+    }
+
+    void set_age(int new_age){
+        if(new_age>0){
+            age=new_age;
+        }
+    }
+};
+int main(){
+    Student s1("Salil", 19);
+    cout<<s1.get_name()<<" is "<<s1.get_age()<<" years old."<<endl;
+
+    s1.set_age(20);
+    cout<<s1.get_name()<<" is now "<<s1.get_age()<<" years old."<<endl;
+
+    return 0;
+}*/
+
+/*In the class Student, data members (name and age) are encapsulated within
+the class, and their access is controlled using getter and setter methods. 
+Direct access to the members is restricted.*/
