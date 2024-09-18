@@ -1,33 +1,11 @@
-//swap the alternating indices of an array
-#include<iostream>
-using namespace std;
+// QUES: create a program that allows user to manage a task list , the program should supports the following commands:
+// 1 add a new task to the list
+// 2 remove a task from a list 
+// 3  display all current task
+// 4 show help, display available commands
+// 5 clear task , clear all task from the list
+// 6 exit the program
+// 7 use function pointer to execute the command and maintain the history of action taken.
 
-void printArray(int arr[], int n){
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
-    }cout<<endl;
-}
 
-void swapAlternate(int arr[], int size){
-    for(int i=0;i<size;i+=2){
-        if(i+1<size){
-            swap(arr[i],arr[i+1]);
-        }
-    }
-}
 
-int main(){
-    int even[8]={1,2,3,4,5,6,7,8};
-    int odd[7]={1,2,3,4,5,6,7};
-
-    swapAlternate(even, 8);
-    printArray(even, 8);
-
-    cout<<endl;
-
-    swapAlternate(odd, 7);
-    printArray(odd, 7);
-
-    return 0;
-}
-//ok
