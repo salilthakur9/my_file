@@ -4949,6 +4949,77 @@ int main(){
 
 
 
+/*#include <iostream>
+#include <vector>
+using namespace std;
+void start() {
+    cout << "Starting..." << endl;
+}
+void stop() {
+    cout << "Stopping..." << endl;
+}
+void pause() {
+    cout << "Pausing..." << endl;
+}
+void showHelp() {
+    cout << "Available commands:" << endl;
+    cout << "1 - Start" << endl;
+    cout << "2 - Stop" << endl;
+    cout << "3 - Pause" << endl;
+    cout << "4 - Show Help" << endl;
+    cout << "5 - Show Command History" << endl;
+    cout << "0 - Exit" << endl;
+}
+void executeCommand(void (*command)(), vector<string>& history) {         // this line defines a function called execute command that ddoes not return any value , it can point to difff function that can bw execute later,it is a vector that hold string it is used to keep track of what command had been executed.
+    command();                                     // this line calls the function the command pointer is pointing too
+    history.push_back("Command executed");          // it keep the record that a command had been executed 
+}
+
+int main() {
+    void (*commandPointer)();
+    vector<string> commandHistory;
+    int choice;
+
+    cout << "Command line interface. Type 4 for help." << endl;
+
+    while (true) {
+        cout << "Enter command (1 for start, 2 for stop, 3 for pause, 4 for help, 5 for history, 0 to exit): ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1:
+                commandPointer = start;
+                executeCommand(commandPointer, commandHistory);
+                break;
+            case 2:
+                commandPointer = stop;
+                executeCommand(commandPointer, commandHistory);
+                break;
+            case 3:
+                commandPointer = pause;
+                executeCommand(commandPointer, commandHistory);
+                break;
+            case 4:
+                showHelp();
+                break;
+            case 5:
+                cout << "Command History:" << endl;
+                for (const auto& entry : commandHistory) {
+                    cout << entry << endl;
+                }
+                break;
+            case 0:
+                cout << "Exiting program." << endl;
+                return 0;
+            default:
+                cout << "Invalid choice! Please enter a valid command." << endl;
+                break;
+        }
+    }
+    return 0;
+}*/
+
+
 
 //------------------------------------------------------------
 // data hiding:
@@ -5159,3 +5230,6 @@ int main(){
 on a Dog or Cat object. The base class Animal has a virtual method, allowing 
 run-time polymorphism. When we call sound on a base class pointer, the 
 derived class's method is invoked.*/
+
+
+
