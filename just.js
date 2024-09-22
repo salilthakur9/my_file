@@ -977,3 +977,14 @@ console.log(lowerCase);*/
 
 
 
+/*function salilsAsyncFunction(){
+    let p=new Promise(function(resolve){
+        resolve("hi there from salil");
+    });
+    return p;
+}
+
+const value = salilsAsyncFunction();
+value.then(function(data){
+    console.log(data);
+})*/
