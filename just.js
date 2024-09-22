@@ -988,3 +988,27 @@ const value = salilsAsyncFunction();
 value.then(function(data){
     console.log(data);
 })*/
+
+
+
+/*function salilsAsyncFunction(){
+    let p = new Promise(function(resolve){
+        setTimeout(resolve, 2000);
+    });
+    return p;
+}
+console.log("hi from salil");
+const value = salilsAsyncFunction();
+value.then(function(){
+    console.log("hello from salil");
+})*/
+
+
+
+/*function salilsAsyncFunction(callback){
+    setTimeout(callback, 2000);
+}
+console.log("hi from salil");
+salilsAsyncFunction(function(){
+    console.log("hello from salil");
+});*/
