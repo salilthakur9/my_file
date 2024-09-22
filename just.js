@@ -969,12 +969,11 @@ d.then(callback);*/
 
 
 
-let str = 'JavaScript';
-
+/*let str = 'JavaScript';
 let upperCase = str.toUpperCase();
-
 let lowerCase = str.toLowerCase();
-
 console.log(upperCase);
+console.log(lowerCase);*/
 
-console.log(lowerCase);
+
+
