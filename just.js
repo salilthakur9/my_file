@@ -1012,3 +1012,33 @@ console.log("hi from salil");
 salilsAsyncFunction(function(){
     console.log("hello from salil");
 });*/
+
+
+
+/*function square(n){
+    return n*n;
+}
+
+function cube(n){
+    return n*n*n;
+}
+
+function sumof_squares(a,b){
+    let sq1 = square(a);
+    let sq2 = square(b);
+    return sq1+sq2;
+}
+
+function sumof_cubes(a,b){
+    let sq1 = cube(a);
+    let sq2 = cube(b);
+    return sq1+sq2;
+}
+ 
+let ans = sumof_squares(1,3);
+console.log(ans);
+let ans2= sumof_cubes(1,3);
+console.log(ans2);*/
+
+
+
