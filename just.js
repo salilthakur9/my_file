@@ -1042,3 +1042,29 @@ console.log(ans2);*/
 
 
 
+/*function square(n){
+    return n*n;
+}
+function cube(n){
+    return n*n*n;
+}
+function quad(n){
+    return n*n*n*n;
+}
+
+function sum_of_something(a, b, func){
+    let a1= func(a);
+    let a2= func(b);
+    return a1+a2;
+}
+
+let result1= sum_of_something(1,3, square);
+let result2= sum_of_something(1,3, cube);
+let result3= sum_of_something(1,3, quad);
+
+console.log(result1);
+console.log(result2);
+console.log(result3);*/
+
+
+
