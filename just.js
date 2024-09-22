@@ -1042,6 +1042,7 @@ console.log(ans2);*/
 
 
 
+// this is callled call back function in js
 /*function square(n){
     return n*n;
 }
@@ -1065,6 +1066,28 @@ let result3= sum_of_something(1,3, quad);
 console.log(result1);
 console.log(result2);
 console.log(result3);*/
+
+
+
+// Async functions
+/*function square (n){
+    return n*n;
+}
+function cube(n){
+    return n*n*n;
+}
+function quad(n){
+    return n*n*n*n;
+}
+
+function sum_of_sq_of_everything(func1, func2, val1, val2){
+    let a= func1(val1);
+    let b= func2(val2);
+    return a+b;
+}
+
+let result= sum_of_sq_of_everything(square, square, cube(2), quad(2));
+console.log(result);*/
 
 
 
