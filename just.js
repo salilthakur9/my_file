@@ -1091,3 +1091,44 @@ console.log(result);*/
 
 
 
+/*readFile("a.txt");  
+// so in the functions like this where we need the permission of the other threads to perform an js query there we need the Async functions to get it solve
+console.log("hi there");*/
+
+/*function onDone(content){
+    console.log(content);
+}
+
+readFile("a.txt", onDone);
+
+console.log("hello");*/
+
+
+
+/*function onDone(){
+    console.log("hi there am i got the pass");
+}
+setTimeout(onDone, 2000);
+console.log("after the setTime out this is the pass");
+
+for(let i =0;i<100000000;i++){
+    i=i+1;
+}
+console.log("hi buddy");*/
+
+
+
+const fs = require("fs");
+let a=1;
+console.log(a);
+
+fs.readFile("a.txt", "utf-8", (err, data)=>{
+    console.log("data read from the file is: ");
+    console.log(data);
+})
+
+let ans =0;
+for(let i=0; i<1000000000;i++){
+    ans=ans+i;
+}
+console.log(ans);
