@@ -1118,7 +1118,7 @@ console.log("hi buddy");*/
 
 
 
-const fs = require("fs");
+/*const fs = require("fs");
 let a=1;
 console.log(a);
 
@@ -1131,4 +1131,37 @@ let ans =0;
 for(let i=0; i<1000000000;i++){
     ans=ans+i;
 }
-console.log(ans);
+console.log(ans);*/
+
+
+
+/*setTimeout(function(){
+    console.log("hi there");
+    setTimeout(function(){
+        console.log("inside the second one");
+    }, 2000);
+}, 2000);*/
+
+
+
+/*function my_own_set_timeout(callback, duration){
+    setTimeout(callback, duration);
+} // return undefined or nothing
+my_own_set_timeout(function(){
+    console.log("hello");
+},1000);*/
+
+/*function promisified_my_own_settimeout(duration){
+    const p = new Promise(function(resolve){
+        setTimeout(function(){
+            resolve();
+        },duration);
+    });
+    return p;
+} // returning a promise
+
+const ans= promisified_my_own_settimeout(1000);
+ans.then(function(){
+    console.log("hi there");
+})
+console.log(ans);*/
