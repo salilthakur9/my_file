@@ -1223,3 +1223,11 @@ const make_person=(first_name, last_name)=>
     ({first: first_name, last: last_name});
 console.log(make_person("salil", "thakur"));*/
 
+/*const person = {
+    name: "ram",
+    age: 22,
+    greet: function () {
+        return `Hello ${this.name}, you are ${this.age} years old`
+    }
+}
+console.log(person.greet());*/
