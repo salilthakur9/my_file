@@ -1184,3 +1184,42 @@ fs.promises.readFile("a.txt", "utf-8").then(function(data){
     console.log(n);
 });
 console.log(n);*/
+
+
+// SYNTAX OF CALLBACKS:
+/*function salils_AsyncFunction(callback){
+    callback("hi");
+}
+async function main(){
+    salils_AsyncFunction(function(value){
+        console.log(value);
+    });
+}
+main();*/
+
+
+//ARROW FUNCTIONS:
+/*const gfg =()=>{
+    console.log("hi there");
+}
+gfg();
+
+const square = x =>x*x;
+console.log(square(4));
+
+const n = (x,y,z) => {
+    console.log("x+y+z= "+ (x+y+z));
+}
+n(10,20,30);*/
+
+
+
+/*const gfg = (x,y,z=300)=>{
+    console.log(x+" "+y+" "+z);
+}
+gfg(100,200);
+
+const make_person=(first_name, last_name)=>
+    ({first: first_name, last: last_name});
+console.log(make_person("salil", "thakur"));*/
+
