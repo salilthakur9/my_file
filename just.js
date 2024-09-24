@@ -1165,3 +1165,14 @@ ans.then(function(){
     console.log("hi there");
 })
 console.log(ans);*/
+
+
+
+/*const fs= require("fs");
+fs.readFile("a.txt", "utf-8", function(err, data){
+    console.log(data);
+});
+
+fs.promises.readFile("a.txt", "utf-8").then(function(data){
+    console.log(data);
+});*/
