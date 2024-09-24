@@ -1176,3 +1176,11 @@ fs.readFile("a.txt", "utf-8", function(err, data){
 fs.promises.readFile("a.txt", "utf-8").then(function(data){
     console.log(data);
 });*/
+
+
+
+/*let n = new Promise(function(resolve){
+    resolve();
+    console.log(n);
+});
+console.log(n);*/
