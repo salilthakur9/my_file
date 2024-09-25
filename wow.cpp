@@ -5347,3 +5347,64 @@ int main(){
 
     return 0;
 }*/
+
+
+
+
+//Design a class structure for Computer. Create a base class Computer with properties for brand, processor, and ramSize.
+//Derive two subclasses: Laptop, which includes a property for batteryLife, and Desktop, which includes a property for formFactor.
+//Each subclass should have a method to show unique specifications. In the main function, instantiate both classes and invoke their 
+//methods to display their features.
+
+
+#include<iostream>
+using namespace std;
+class Computer{
+    string brand, processor;
+    int ramSize;
+
+    public:
+    Computer(string b, string p, int r):brand(b), processor(p), ramSize(r){}
+
+    void display(){
+        cout<<"BRAND: "<<brand<<endl;
+        cout<<"PROCESSOR: "<<processor<<endl;
+        cout<<"RAM SIZE: "<<ramSize<<endl;
+    }
+};
+
+class Laptop : public Computer{
+    int batteryLife;
+
+    public:
+    Laptop(string b, string p, int r, int battery):Computer(b,p,r),batteryLife(battery){}
+
+    void display1(){
+        display();
+        cout<<"BATTERY LIFE: "<<batteryLife<<" hours."<<endl;
+    }
+};
+
+class Desktop : public Computer {
+    string FormFactor;
+
+    public:
+    Desktop(string b, string p, int r, string form):Computer(b,p,r), FormFactor(form){}
+
+    void display2(){
+        display();
+        cout<<"FORM FACTOR: "<<FormFactor<<endl;
+    }
+};
+
+int main(){
+    Laptop obj1("HP", "Intel i9", 16, 10);
+    cout<<"LAPTOP DETAILS: "<<endl;
+    obj1.display1();
+    cout<<endl;
+    Desktop obj2("Dell", "Intel i7", 32, "Height:182mm, width:36mm, depth:178mm");
+    cout<<"DESKTOP DETAILS: "<<endl;
+    obj2.display2();
+
+    return 0;
+}
