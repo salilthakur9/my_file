@@ -5233,7 +5233,7 @@ derived class's method is invoked.*/
 
 
 
-#include <iostream>
+/*#include <iostream>
 #include <string>
 using namespace std;
 
@@ -5286,4 +5286,64 @@ int main() {
     mySUV.activate4WD();
 
     return 0;
-}
+}*/
+
+
+
+//Create a class hierarchy for Bicycle. Implement a base class Bicycle with attributes for brand, type, and 
+//gearCount. Then, derive two classes: MountainBike with an additional attribute suspensionType, and RoadBike 
+//with an attribute tireWidth. Each derived class should have a method to display specific features. Write a 
+//main function that demonstrates creating instances of each class and calling their methods.
+
+
+/*#include<iostream>
+using namespace std;
+class Bicycle{
+    string brand,type;
+    int gearCount;
+
+    public:
+    Bicycle(string b, string t, int g):brand(b), type(t), gearCount(g){}
+    
+    void display(){
+            cout<<"BRAND: "<<brand<<endl;
+            cout<<"TYPE: "<<type<<endl;
+            cout<<"GEAR COUNT: "<<gearCount<<endl;
+    }
+};
+
+class MountainBike : public Bicycle{
+    string suspensionType;
+
+    public:
+    MountainBike(string b, int g, string s):Bicycle(b, "Mountain Bike", g), suspensionType(s){}
+
+    void display1(){
+        display();
+        cout<<"SUSPENSION: "<<suspensionType<<endl;
+    }
+};
+
+class RoadBike : public Bicycle{
+    float tirewidth;
+
+    public:
+    RoadBike(string b, int g, float w):Bicycle(b, "Road Bike", g), tirewidth(w){}
+
+    void display2(){
+        display();
+        cout<<"TIRE WIDTH: "<<tirewidth<<" mm "<<endl;
+    }
+};
+
+int main(){
+    MountainBike obj1("Tyson", 18, "Dual suspension");
+    cout<<"MOUNTAIN BIKE: "<<endl;
+    obj1.display1();
+    cout<<endl;
+    RoadBike obj2("Stark", 22, 28.5);
+    cout<<"ROAD BIKE: "<<endl;
+    obj2.display2();
+
+    return 0;
+}*/
