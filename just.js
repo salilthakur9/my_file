@@ -1231,3 +1231,15 @@ console.log(make_person("salil", "thakur"));*/
     }
 }
 console.log(person.greet());*/
+
+
+/*function square(n){
+    return n*n;
+}
+
+const square1 = square(5);
+const square2 = square(10);
+
+module.exports = {
+    square1,square2
+};*/

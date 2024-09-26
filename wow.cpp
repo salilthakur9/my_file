@@ -5350,14 +5350,13 @@ int main(){
 
 
 
-
 //Design a class structure for Computer. Create a base class Computer with properties for brand, processor, and ramSize.
 //Derive two subclasses: Laptop, which includes a property for batteryLife, and Desktop, which includes a property for formFactor.
 //Each subclass should have a method to show unique specifications. In the main function, instantiate both classes and invoke their 
 //methods to display their features.
 
 
-#include<iostream>
+/*#include<iostream>
 using namespace std;
 class Computer{
     string brand, processor;
@@ -5407,4 +5406,7 @@ int main(){
     obj2.display2();
 
     return 0;
-}
+}*/
+
+
+
