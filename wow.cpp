@@ -5410,3 +5410,75 @@ int main(){
 
 
 
+/*#include <iostream>
+using namespace std;
+
+class Vehicle {
+public:
+    void show() {
+        cout << "This is a Vehicle" << endl;
+    }
+};
+
+class Car : public Vehicle {
+public:
+    void show() {
+        cout << "This is a Car" << endl;
+    }
+};
+
+class Bike : public Vehicle {
+public:
+    void show() {
+        cout << "This is a Bike" << endl;
+    }
+};
+
+class Garage : public Car, public Bike {
+public:
+    void display() {
+        Car::show();
+        Bike::show();
+    }
+};
+
+class Owner : public Garage {
+public:
+    void introduce() {
+        cout << "I am the Owner." << endl;
+    }
+};
+
+int main() {
+    Garage garage;
+    garage.display();
+
+    Owner owner;
+    owner.introduce();
+    return 0;
+}*/
+
+
+
+/*#include<iostream>
+using namespace std;
+class A{
+    int a;
+    int b;
+    public:
+    void func1(int a, int b){
+        cout<<"The age of the man is : "<<a<<endl;
+        cout<<"the age of the women is : "<<b<<endl;
+    }
+};
+int main
+(){
+    A obj;
+    int age_of_men, age_of_women;
+    cin>>age_of_men;
+    cin>>age_of_women;
+
+    obj.func1(age_of_men, age_of_women);
+
+    return 0;
+}*/

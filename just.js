@@ -1243,3 +1243,11 @@ const square2 = square(10);
 module.exports = {
     square1,square2
 };*/
+
+
+/*const input_array=[1,2,3,4,5];
+const new_Array=[];
+for(let i=0;i<input_array.length;i++){
+    new_Array[i]=input_array[i]*2;
+}
+console.log(new_Array);*/
