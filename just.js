@@ -1250,4 +1250,5 @@ const new_Array=[];
 for(let i=0;i<input_array.length;i++){
     new_Array[i]=input_array[i]*2;
 }
-console.log(new_Array);*/
+console.log(new_Array);
+*/
