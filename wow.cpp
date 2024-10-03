@@ -5482,3 +5482,72 @@ int main
 
     return 0;
 }*/
+
+
+
+/*Problem Statement: Design a class hierarchy to represent different types of employees in a company. You will create a base class called
+Employee and two derived classes: FullTimeEmployee and PartTimeEmployee. Each employee has a name and a method to calculate their salary.
+Base Class: Employee Attributes: string name Methods: Employee(string name): Constructor to initialize the employee's name. virtual 
+double calculateSalary(): A virtual method that returns the salary (default implementation returns 0). Derived Class: FullTimeEmployee 
+Attributes: double monthlySalary Methods: FullTimeEmployee(string name, double monthlySalary): Constructor to initialize the name and 
+monthly salary. double calculateSalary() override: Override the base class method to return the monthly salary. Derived Class: 
+PartTimeEmployee Attributes: double hourlyWage int hoursWorked Methods: PartTimeEmployee(string name, double hourlyWage, int hoursWorked):
+Constructor to initialize the name, hourly wage, and hours worked. double calculateSalary() override: Override the base class method to 
+return the total salary based on hours worked. Instructions: Implement the classes as described above. In the main() function, create 
+one full-time employee and one part-time employee. Output their names and calculated salaries using the calculateSalary() method.*/
+
+
+/*#include <iostream>
+#include <string>
+using namespace std;
+class Employee {
+protected:
+    string name;
+public:
+    Employee(string name) : name(name) {}
+    virtual double calculateSalary() {
+        return 0;
+    }
+    string getName(){
+        return name;
+    }
+};
+
+class FullTimeEmployee : public Employee {
+private:
+    double monthlySalary;
+public:
+    FullTimeEmployee(string name, double monthlySalary)
+        : Employee(name), monthlySalary(monthlySalary) {}
+    double calculateSalary() override {
+        return monthlySalary;
+    }
+};
+class PartTimeEmployee : public Employee {
+private:
+    double hourlyWage;
+    int hoursWorked;
+public:
+    PartTimeEmployee(string name, double hourlyWage, int hoursWorked)
+        : Employee(name), hourlyWage(hourlyWage), hoursWorked(hoursWorked) {}
+    double calculateSalary() override {
+        return hourlyWage * hoursWorked;
+    }
+};
+
+int main() {
+    FullTimeEmployee fullTimeEmp("John Doe", 5000.0);
+
+    PartTimeEmployee partTimeEmp("Jane Smith", 20.0, 80);
+
+    cout << "Full-time Employee: " << fullTimeEmp.getName() << endl;
+    cout << "Salary: $" << fullTimeEmp.calculateSalary() << endl;
+
+    cout << "Part-time Employee: " << partTimeEmp.getName() << endl;
+    cout << "Salary: $" << partTimeEmp.calculateSalary() << endl;
+
+    return 0;
+}*/
+
+
+
