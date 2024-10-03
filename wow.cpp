@@ -5551,3 +5551,55 @@ int main() {
 
 
 
+/*#include<iostream>
+#include<string>
+using namespace std;
+class Vehicle{
+    protected:
+    string name;
+    public:
+    Vehicle(string name): name(name) {}
+    virtual double calculateRentalCost(){
+        return 0;
+    }
+    string getName(){
+        return name;
+    }
+};
+
+class Car : public Vehicle{
+    private:
+    double dailyRentalRate;
+    public:
+    Car(string name, double dailyRentalRate)
+    : Vehicle(name), dailyRentalRate(dailyRentalRate){}
+    double calculateRentalCost(int daysRented) {
+        return dailyRentalRate * daysRented;
+    }
+};
+
+class Bike : public Vehicle {
+private:
+    double hourlyRentalRate;
+    int hoursRented;
+public:
+    Bike(string name, double hourlyRentalRate, int hoursRented)
+        : Vehicle(name), hourlyRentalRate(hourlyRentalRate), hoursRented(hoursRented) {}
+    double calculateRentalCost() override {
+        return hourlyRentalRate * hoursRented;
+    }
+};
+
+int main() {
+    Car car("Toyota Camry", 50.0);
+    Bike bike("Mountain Bike", 5.0, 10);
+
+    cout << "Car: " << car.getName() << endl;
+    cout << "Rental Cost for 3 days: $" << car.calculateRentalCost(3) << endl;
+
+    cout << "Bike: " << bike.getName() << endl;
+    cout << "Rental Cost for " << 10 << " hours: $" << bike.calculateRentalCost() << endl;
+
+    return 0;
+}*/
+
