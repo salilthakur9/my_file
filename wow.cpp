@@ -5603,3 +5603,149 @@ int main() {
     return 0;
 }*/
 
+
+
+/*#include <iostream>
+using namespace std;
+class Staff {
+public:
+    virtual void performDuties() = 0;
+    virtual ~Staff() {
+        cout << "Staff Destructor Called" << endl;
+    }
+};
+class Teacher : public Staff {
+public:
+    void performDuties() override {
+        cout << "Teacher: Teaching students, preparing lessons, grading assignments." << endl;
+    }
+    ~Teacher() {
+        cout << "Teacher Destructor Called" << endl;
+    }
+};
+class Principal : public Staff {
+public:
+    void performDuties() override {
+        cout << "Principal: Overseeing school operations, managing staff, handling administration." << endl;
+    }
+    ~Principal() {
+        cout << "Principal Destructor Called" << endl;
+    }
+};
+class Counselor : public Staff {
+public:
+    void performDuties() override {
+        cout << "Counselor: Guiding students, providing emotional support, career counseling." << endl;
+    }
+    ~Counselor() {
+        cout << "Counselor Destructor Called" << endl;
+    }
+};
+void assignDuties(Staff* staffMember) {
+    staffMember->performDuties();
+}
+
+int main() {
+    Staff* staffMembers[3];
+
+    staffMembers[0] = new Teacher();
+    staffMembers[1] = new Principal();
+    staffMembers[2] = new Counselor();
+
+    for (int i = 0; i < 3; ++i) {
+        assignDuties(staffMembers[i]);
+    }
+    for (int i = 0; i < 3; ++i) {
+        delete staffMembers[i]; 
+    }
+
+    return 0;
+    }*/
+
+
+
+#include <iostream>
+#include <stdexcept> 
+using namespace std;
+class SavingsAccount {
+private:
+    double balance;
+public:
+    SavingsAccount() : balance(0.0) {}
+    void createAccount() {
+        double initialDeposit;
+        cout << "Enter initial deposit amount: ";
+        cin >> initialDeposit;
+        if (initialDeposit <= 0) {
+            throw invalid_argument("Initial Deposit Must Be Positive");
+        }
+        balance = initialDeposit;
+        cout << "Account created successfully. Initial balance: " << balance << endl;
+    }
+
+    void deposit(double amount) {
+        if (amount <= 0) {
+            throw invalid_argument("Invalid Deposit Amount");
+        }
+        balance += amount;
+        cout << "Amount deposited successfully. New balance: " << balance << endl;
+    }
+
+    void withdraw(double amount) {
+        if (amount <= 0) {
+            throw invalid_argument("Invalid Withdrawal Amount");
+        }
+        if (amount > balance) {
+            throw runtime_error("Insufficient Funds");
+        }
+        balance -= amount;
+        cout << "Amount withdrawn successfully. New balance: " << balance << endl;
+    }
+
+    double getBalance() const {
+        return balance;
+    }
+};
+
+int main() {
+    SavingsAccount account;
+    int choice;
+    double amount;
+
+    do {
+        cout << "\nSavings Account Management System:"<<endl<< "1. Create Account"<<endl<< "2. Deposit Money"<<endl<<"3. Withdraw Money"<<endl<< "4. View Account Balance"<<endl<<"5. Exit"<<endl<<"Enter your choice: ";
+        cin >> choice;
+
+        try {
+            switch (choice) {
+                case 1:
+                    account.createAccount();
+                    break;
+                case 2:
+                    cout << "Enter deposit amount: ";
+                    cin >> amount;
+                    account.deposit(amount);
+                    break;
+                case 3:
+                    cout << "Enter withdrawal amount: ";
+                    cin >> amount;
+                    account.withdraw(amount);
+                    break;
+                case 4:
+                    cout << "Current balance: " << account.getBalance() << endl;
+                    break;
+                case 5:
+                    cout << "Exiting program. Thank you!\n";
+                    break;
+                default:
+                    cout << "Invalid choice. Please try again.\n";
+            }
+        } catch (const invalid_argument& e) {
+            cout << "Error: " << e.what() << endl;
+        } catch (const runtime_error& e) {
+            cout << "Error: " << e.what() << endl;
+        }
+    } while (choice != 5);
+
+    return 0;
+}
