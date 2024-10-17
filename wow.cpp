@@ -5664,7 +5664,7 @@ int main() {
 
 
 
-#include <iostream>
+/*#include <iostream>
 #include <stdexcept> 
 using namespace std;
 class SavingsAccount {
@@ -5746,6 +5746,63 @@ int main() {
             cout << "Error: " << e.what() << endl;
         }
     } while (choice != 5);
+    return 0;
+}*/
+
+
+
+
+/*#include<iostream>
+using namespace std;
+class Bankaccount{
+    private:
+    double balance;
+    public:
+    Bankaccount(double bal=0.0):balance(bal){}
+    Bankaccount operator+(const Bankaccount &other)const{
+        return Bankaccount(balance+other.balance);
+    }
+    Bankaccount operator-(const Bankaccount &other)const{
+        return Bankaccount(balance+other.balance);
+    }
+    bool operator==(const Bankaccount &other)const{
+        return balance==other.balance;
+    }
+    void deposit(double amount){
+        balance+=amount;
+    }
+    void withdrawl(double amount){
+        if(amount<=balance){
+            balance-=amount;
+        }
+        else{
+            cout<<"Insufficient funds"<<endl;
+        }
+    }
+    void display()const{
+        cout<<"Balance Rs"<<balance<<endl;
+    }
+};
+int main(){
+    Bankaccount account1(1000.0);
+    Bankaccount account2(500.0);
+     cout << "Initial Balances:" << endl;
+    account1.display();
+    account2.display();
+
+    Bankaccount total = account1 + account2;
+    cout << "\nAfter adding account2 funds to account1:" << endl;
+    total.display();
+
+    Bankaccount withdrawal = account1 - account2;
+    cout << "\nAfter withdrawing account2 funds from account1:" << endl;
+    withdrawal.display();
+
+    if (account1 == account2) {
+        cout << "\nBoth accounts have the same balance." << endl;
+    } else {
+        cout << "\nAccounts have different balances." << endl;
+    }
 
     return 0;
-}
+}*/
