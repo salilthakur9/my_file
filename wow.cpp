@@ -5806,3 +5806,49 @@ int main(){
 
     return 0;
 }*/
+
+
+
+/*#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Movie {
+private:
+    string title;
+    string director;
+    float duration;
+
+public:
+    Movie() : title(""), director(""), duration(0.0) {}
+
+    friend ostream& operator<<(ostream& os, const Movie& movie) {
+        os << "Title: " << movie.title 
+           << ", Director: " << movie.director 
+           << ", Duration: " << movie.duration << " minutes";
+        return os;
+    }
+
+    friend istream& operator>>(istream& is, Movie& movie) {
+        cout << "Enter movie title: ";
+        is.ignore();
+        getline(is, movie.title);
+        cout << "Enter movie director: ";
+        getline(is, movie.director);
+        cout << "Enter movie duration (in minutes): ";
+        is >> movie.duration;
+        return is;
+    }
+};
+
+int main() {
+    Movie movie;
+    cin >> movie;
+    cout << movie << endl;
+    return 0;
+}*/
+
+
+
+
