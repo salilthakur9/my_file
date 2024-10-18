@@ -1252,3 +1252,15 @@ for(let i=0;i<input_array.length;i++){
 }
 console.log(new_Array);
 */
+
+
+
+/*const myPromise = new Promise((resolve, reject) => {
+    let num = -5;
+    num > 0 ? resolve("hello, positive") : reject(new Error("no place for negative"));
+});
+
+myPromise
+    .then((fulfilledValue) => console.log(fulfilledValue))
+    .catch((err) => console.log(err));
+*/
