@@ -5880,3 +5880,82 @@ int main()
     return 0;
 
 }*/
+
+
+
+/*#include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+class Library {
+    vector<string> books;
+
+public:
+    void addBook(const string& title) {
+        books.push_back(title);
+        cout << "Added: " << title << "\n";
+    }
+
+    void removeLastBook() {
+        if (!books.empty()) {
+            cout << "Removed: " << books.back() << "\n";
+            books.pop_back();
+        } else {
+            cout << "No books to remove.\n";
+        }
+    }
+
+    void removeSpecificBook(const string& title) {
+        auto it = find(books.begin(), books.end(), title);
+        if (it != books.end()) {
+            books.erase(it);
+            cout << "Removed: " << title << "\n";
+        } else {
+            cout << "Book not found: " << title << "\n";
+        }
+    }
+
+    void displayBooks() const {
+        if (books.empty()) {
+            cout << "No books in the collection.\n";
+        } else {
+            cout << "Books in the library:\n";
+            for (const auto& book : books) {
+                cout << "- " << book << "\n";
+            }
+        }
+    }
+};
+
+int main() {
+    Library lib;
+    int choice;
+    string title;
+
+    while (true) {
+        cout << "\n1. Add Book  2. Remove Last  3. Remove Specific  4. Display  5. Exit\nChoose: ";
+        cin >> choice;
+        cin.ignore(); 
+        if (choice == 1) {
+            cout << "Enter title: "; getline(cin, title); lib.addBook(title);
+        } else if (choice == 2) {
+            lib.removeLastBook();
+        } else if (choice == 3) {
+            cout << "Enter title to remove: "; getline(cin, title); lib.removeSpecificBook(title);
+        } else if (choice == 4) {
+            lib.displayBooks();
+        } else if (choice == 5) {
+            break;
+        } else {
+            cout << "Invalid choice!\n";
+        }
+    }
+
+    return 0;
+}*/
+
+
+
