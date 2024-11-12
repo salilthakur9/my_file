@@ -24,3 +24,40 @@ int main(){
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*Question:
+Create a C++ class Factorial with:
+
+A private integer variable number to store the value.
+A public method setNumber to set the value of number.
+A public method getFactorial that calculates and returns the factorial of number.*/
+
+#include<iostream>
+using namespace std;
+class Factorial{
+    private:
+    int number;
+
+    public:
+    void setNumber(int n){
+        number = n;
+    }
+
+    int getNumber(){
+        int result=1;
+        for(int i=1;i<=number;i++){
+            result*=i;
+        }
+        return result;
+    }
+};
+int main(){
+    Factorial f;
+
+    int n;
+    cin>>n;
+
+    f.setNumber(n);
+    cout<<"the factorial of "<<n<<" is "<<f.getNumber()<<endl;
+
+    return 0;  
+}
