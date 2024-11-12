@@ -173,3 +173,48 @@ int main(){
 
     return 0;
 }*/
+
+/*----------------------------------------------------------------------------------6--------------------------------------------------------------------------------------*/
+
+/*Question:
+Create a class Swapper with:
+
+Private integer attributes a and b.
+A method setValues to initialize a and b.
+A method swapValues that swaps a and b without using a third variable.
+A method display to print the values of a and b.*/
+
+/*#include<iostream>
+using namespace std;
+class Swapper{
+    int a,b;
+    public:
+
+    void setValues(int number1,int number2){
+        a=number1;
+        b=number2;
+    }
+
+    void swapValues(){
+        a=a+b;
+        b=a-b;
+        a=a-b;
+    }
+
+    void display(){
+        cout<<"a: "<<a<<" and b: "<<b<<endl;
+    }
+};
+int main(){
+    Swapper s;
+    int number1,number2;
+    cin>>number1>>number2;
+
+    s.setValues(number1,number2);
+    s.display();
+    s.swapValues();
+    s.display();
+
+    return 0;
+
+}*/
