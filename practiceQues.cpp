@@ -218,3 +218,42 @@ int main(){
     return 0;
 
 }*/
+
+/*----------------------------------------------------------------------------------7--------------------------------------------------------------------------------------*/
+
+/*Question:
+Write a class Swapper with:
+
+A constructor to initialize two private attributes a and b.
+A method swapValues that swaps a and b using XOR bitwise operations, without a third variable.
+A method display to print the values.*/
+
+/*#include<iostream>
+using namespace std;
+class Swapper{
+    int a,b;
+
+    public:
+    Swapper(int x, int y):a(x),b(y){}
+
+    void swapValues(){
+        a=a^b;
+        b=a^b;
+        a=a^b;
+    }
+
+    void display(){
+        cout<<"value of a: "<<a<<" and b: "<<b<<endl;
+    }
+};
+int main(){
+    int x,y;
+    cin>>x>>y;
+
+    Swapper s(x,y);
+    s.display();
+    s.swapValues();
+    s.display();
+
+    return 0;
+}*/
