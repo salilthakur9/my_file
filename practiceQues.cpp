@@ -145,3 +145,31 @@ int main(){
 
     return 0;
 }*/
+
+/*----------------------------------------------------------------------------------5--------------------------------------------------------------------------------------*/
+
+/*Question:
+Create a C++ class Swapper that has two integer attributes a and b. Write a public method swapValues that swaps the values of a and b without 
+using a third variable. Demonstrate this method in the main function.*/
+
+/*#include<iostream>
+using namespace std;
+class Swapper{
+    public:
+    int a,b;
+    void swapValues(){
+        a=a+b;
+        b=a-b;
+        a=a-b;
+    }
+};
+int main(){
+    Swapper s;
+    cin>>s.a>>s.b;
+
+    cout<<"before swap the number are: "<<s.a<<" and "<<s.b<<endl;
+    s.swapValues();
+    cout<<"after swap the numbers are: "<<s.a<<" and "<<s.b<<endl;
+
+    return 0;
+}*/
