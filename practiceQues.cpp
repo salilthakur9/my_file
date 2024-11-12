@@ -100,3 +100,48 @@ int main(){
     return 0;
 
 }*/
+
+/*----------------------------------------------------------------------------------4--------------------------------------------------------------------------------------*/
+
+/*Question:
+Create a C++ program with a class Factorial that supports:
+
+Input validation in the constructor to ensure only non-negative integers are used.
+An overloaded calculate method, where one version calculates the factorial iteratively, and the other calculates it recursively.
+A static method displayFactorial that displays the factorial of a given number without creating an object.*/
+
+/*#include<iostream>
+using namespace std;
+class Factorial{
+    int number;
+    public:
+    Factorial(int n){
+        if(n<0)number=0;
+        else number=n;
+    }
+    int calculate(){
+        int result=1;
+        for(int i=1;i<=number;i++) result*=i;
+        return result;
+    }
+    int calculate(int n){
+        if(n<1)return 1;
+        return n*calculate(n-1);
+    }
+    static void display (int n){
+        Factorial f(n);
+        cout<<"the factorial of "<<n<<" is "<<f.calculate(n)<<endl;
+    }
+};
+int main(){
+    int num;
+    cin>>num;
+
+    Factorial f(num);
+    cout<<"the factorial of "<<num<<" for without parameter function is: "<<f.calculate()<<endl;
+    cout<<"the factorial of "<<num<<" for parameterized function is: "<<f.calculate(num)<<endl;
+
+    Factorial ::display(num);
+
+    return 0;
+}*/
