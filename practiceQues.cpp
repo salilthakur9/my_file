@@ -257,3 +257,65 @@ int main(){
 
     return 0;
 }*/
+
+/*----------------------------------------------------------------------------------8--------------------------------------------------------------------------------------*/
+
+/*Question:
+Create a Swapper class with:
+
+Private integer attributes a and b.
+A constructor to initialize the attributes.
+Overloaded swapValues methods: one using addition/subtraction and the other using XOR bitwise operations.
+A static method displaySwap that swaps two given numbers without creating an object.*/
+
+/*#include<iostream>
+using namespace std;
+class Swapper{
+    int a,b;
+
+    public:
+    Swapper(int x, int y):a(x),b(y){}
+
+    void swapValuesUsingAdditionSubtraction(int x, int y){
+        x=x+y;
+        y=x-y;
+        x=x-y;
+    }
+
+    void swapValuesUsingXorOperator(int x , int y){
+        x=x^y;
+        y=x^y;
+        x=x^y;
+    }
+
+    static void displayUsingStaticFunction(int x , int y){
+        x=x+y;
+        y=x-y;
+        x=x-y;
+        cout<<"after swap value of x= "<<x<<" and y= "<<y<<endl;
+    }
+
+    void display(){
+        cout<<"value of a= "<<a<<" and b= "<<b<<endl;
+    }
+
+};
+
+int main(){
+    int number1,number2;
+    cin>>number1>>number2;
+
+    Swapper s(number1,number2);
+    s.display();
+    s.swapValuesUsingAdditionSubtraction(number1,number2);
+    s.display();
+    s.swapValuesUsingXorOperator(number1, number2);
+    s.display();
+
+    Swapper::displayUsingStaticFunction(number1,number2);
+
+    return 0;
+}*/
+
+
+
