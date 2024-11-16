@@ -371,3 +371,40 @@ int main(){
     cout<<"sum of "<<n<<" indexes of arr is: "<<s.calculateSum(arr,n)<<endl;
     return 0;
 }*/
+
+/*----------------------------------------------------------------------------------11--------------------------------------------------------------------------------------*/
+
+/*Problem:
+Write a program for a company that generates personalized email greetings. 
+The greeting should include the recipient's first and last name and their role in the company.*/
+
+/*#include<iostream>
+using namespace std;
+class Company{
+    private:
+    string first_name,last_name,role;
+
+    public:
+    void setItems(const string fn, const string ln, const string r){
+        first_name = fn;
+        last_name = ln;
+        role = r;
+    }
+
+    void display(){
+        cout<<"Dear "<<first_name<<" "<<last_name<<","<<endl;
+        cout<<"welcome as a "<<role<<" !"<<endl;
+    }
+};
+int main(){
+    string f,l,r;
+    cin>>f>>l;
+    cin.ignore();
+    getline(cin, r);
+
+    Company c;
+    c.setItems(f,l,r);
+    c.display();
+
+    return 0;
+}*/
