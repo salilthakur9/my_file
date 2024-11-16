@@ -317,5 +317,57 @@ int main(){
     return 0;
 }*/
 
+/*----------------------------------------------------------------------------------9--------------------------------------------------------------------------------------*/
 
+/*Question:
+Create a C++ class SumCalculator with a single public method sum that takes two integer numbers as arguments and returns their sum. 
+Demonstrate the method in the main function by finding the sum of two numbers.*/
 
+/*#include<iostream>
+using namespace std;
+class SumCalculator{
+    public:
+    int sum(int a,int b){
+        return a+b;
+    }
+};
+int main(){
+    int x,y;cin>>x>>y;
+
+    SumCalculator s;
+    cout<<"Sum of "<<x<<" and "<<y<<" is "<<s.sum(x,y)<<endl;
+
+    return 0;
+}*/
+
+/*----------------------------------------------------------------------------------10--------------------------------------------------------------------------------------*/
+
+/*Question:
+Write a class SumCalculator that can calculate the sum of a set of numbers using a method calculateSum. The method takes an array and the 
+size of the array as parameters and returns the sum of the elements. Demonstrate this in the main function.*/
+
+/*#include<iostream>
+using namespace std;
+class SumCalculator{
+    public:
+    int calculateSum(int arr[],int size){
+        int sum=0;
+        for(int i=0;i<size;i++){
+            sum+=arr[i];
+        }return sum;
+    }
+};
+
+int main(){
+    int n;
+    cin>>n;
+
+    SumCalculator s;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+
+    cout<<"sum of "<<n<<" indexes of arr is: "<<s.calculateSum(arr,n)<<endl;
+    return 0;
+}*/
