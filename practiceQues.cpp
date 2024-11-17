@@ -455,3 +455,42 @@ int main(){
     
     return 0;
 }*/
+
+/*----------------------------------------------------------------------------------13--------------------------------------------------------------------------------------*/
+
+/*Problem Statement:
+A school needs a program to display the exam results of a student. The program should accept the student’s name and grades for three subjects. 
+It should then display the results in the following format:
+
+less
+Copy code
+Exam Results for [Student Name]:  
+Subject 1: [Grade]  
+Subject 2: [Grade]  
+Subject 3: [Grade]  */
+
+/*#include<iostream>
+#include<string>
+using namespace std;
+class Grades{
+    
+};
+
+int main(){
+    int number_of_subs;
+    cout<<"Enter the number of subjects: "<<endl;
+    cin>>number_of_subs;
+    cin.ignore(); 
+
+    string subjects[10];
+    for (int i = 1; i <= number_of_subs; i++) {
+        cout << "Enter name of subject " << i << ": ";
+        getline(cin, subjects[i]); 
+    }
+    cout << endl;
+
+    return 0;
+}*/
+
+/*----------------------------------------------------------------------------------14--------------------------------------------------------------------------------------*/
+
