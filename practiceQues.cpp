@@ -379,6 +379,7 @@ Write a program for a company that generates personalized email greetings.
 The greeting should include the recipient's first and last name and their role in the company.*/
 
 /*#include<iostream>
+#include<string>
 using namespace std;
 class Company{
     private:
@@ -406,5 +407,51 @@ int main(){
     c.setItems(f,l,r);
     c.display();
 
+    return 0;
+}*/
+
+/*----------------------------------------------------------------------------------12--------------------------------------------------------------------------------------*/
+
+/*A restaurant wants to create a digital menu system. The program should accept 5 menu items as input from the user and display them in 
+a numbered format as shown below:
+
+markdown
+Copy code
+Restaurant Menu:  
+1. Burger  
+2. Pasta  
+3. Pizza  
+4. Salad  
+5. Juice  */
+
+/*#include<iostream>
+#include<string>
+using namespace std;
+class Restaurant{
+    string items[5];
+
+    public:
+    void set_items(const string items_list[]){
+        for(int i=0;i<5;i++){
+            items[i]=items_list[i];
+        }
+    }
+
+    void display(){
+        cout<<"The itms u have ordered are: "<<endl;
+        for(int i=0;i<5;i++){
+            cout<<i+1<<". "<<items[i]<<endl;
+        }
+    }
+};
+int main(){
+    string add_items[5];
+    for(int i=0;i<5;i++){
+        getline(cin, add_items[i]);
+    }
+    Restaurant r;
+    r.set_items(add_items);
+    r.display();
+    
     return 0;
 }*/
