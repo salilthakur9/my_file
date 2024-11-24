@@ -462,8 +462,6 @@ int main(){
 A school needs a program to display the exam results of a student. The program should accept the student’s name and grades for three subjects. 
 It should then display the results in the following format:
 
-less
-Copy code
 Exam Results for [Student Name]:  
 Subject 1: [Grade]  
 Subject 2: [Grade]  
@@ -494,3 +492,112 @@ int main(){
 
 /*----------------------------------------------------------------------------------14--------------------------------------------------------------------------------------*/
 
+/*Problem Statement:
+A railway system needs a program to display train ticket details. The program should accept the passenger’s name, train number, and seat number as input, and display the details in the following format:
+
+Train Ticket Details:  
+Passenger Name: [Name]  
+Train Number: [Train Number]  
+Seat Number: [Seat Number]  */
+
+/*#include<iostream>
+#include<string>
+using namespace std;
+class Train{
+    string pName;
+    int trainNumber,seatNumber;
+
+    public:
+    void set_items(string name, int tNumber, int sNumber){
+        pName= name;
+        trainNumber=tNumber;
+        seatNumber=sNumber;
+    }
+
+    void display(){
+        cout<<"The details are:"<<endl;
+        cout<<"Passenger Name: "<<pName<<endl;
+        cout<<"Train Number: "<<trainNumber<<endl;
+        cout<<"Seat Number: "<<seatNumber<<endl;
+    }
+};
+int main(){
+    int number,sNumber;
+    string name;
+    cin.ignore();
+
+    getline(cin, name);
+    cin>>number>>sNumber;
+
+    Train t;
+    t.set_items(name,number,sNumber);
+    t.display();
+
+    return 0;
+}*/
+
+
+
+#include <iostream>
+using namespace std;
+
+class KthLargestFinder {
+private:
+    int numbers[100]; // Array to store the numbers
+    int size;
+
+    // Function to sort the array in descending order
+    void sortDescending() {
+        for (int i = 0; i < size - 1; i++) {
+            for (int j = i + 1; j < size; j++) {
+                if (numbers[i] < numbers[j]) {
+                    int temp = numbers[i];
+                    numbers[i] = numbers[j];
+                    numbers[j] = temp;
+                }
+            }
+        }
+    }
+
+public:
+    // Function to set numbers in the array
+    void setNumbers(int arr[], int n) {
+        size = n;
+        for (int i = 0; i < n; i++) {
+            numbers[i] = arr[i];
+        }
+    }
+
+    // Function to print the kth largest number
+    void printKthLargest(int k) {
+        if (k > size || k <= 0) {
+            cout << "Invalid value of k!" << endl;
+            return;
+        }
+
+        sortDescending(); // Sort the array
+        cout << "The " << k << "th largest number is: " << numbers[k - 1] << endl;
+    }
+};
+
+int main() {
+    KthLargestFinder finder;
+    int n, k;
+
+    cout << "Enter the number of elements: ";
+    cin >> n;
+
+    int arr[100];
+    cout << "Enter the elements: ";
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+
+    cout << "Enter the value of k: ";
+    cin >> k;
+
+    finder.setNumbers(arr, n); // Set the array of numbers
+    finder.printKthLargest(k); // Print the kth largest number
+
+    return 0;
+}
